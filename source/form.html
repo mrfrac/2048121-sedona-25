@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Academy: Седона, Оставьте свой отзыв</title>
+</head>
+<body class="page-body">
+
+<header class="main-header">
+  <a class="main-header__logo">
+    <img src="img/logotype-mobile.svg" width="102" height="84" alt="Седона - небольшой городок в Аризоне">
+  </a>
+  <nav class="main-nav">
+    <button class="main-nav__toggle" type="button">
+      <span class="visually-hidden">Меню</span>
+    </button>
+    <div class="main-nav__wrapper">
+      <ul class="main-nav__list">
+        <li class="main-nav__list-item">
+          <a href="#">Главная</a>
+        </li>
+        <li class="main-nav__list-item">
+          <a href="#">Фото и видео</a>
+        </li>
+        <li class="main-nav__list-item">
+          <a href="#">Форма отзыва</a>
+        </li>
+        <li class="main-nav__list-item">
+          <a href="#">HTML Academy</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main class="main-container">
+  <h1 class="visually-hidden">Оставьте свой отзыв</h1>
+
+  <section class="welcome">
+    <h2 class="visually-hidden">Добро пожаловать в Седону</h2>
+  </section>
+
+  <section class="page-header">
+    <div class="page-header__wrapper">
+      <h2 class="page-header__title">Оставьте свой отзыв</h2>
+      <p class="page-header__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+    </div>
+  </section>
+
+  <section class="feedback-form">
+    <h2 class="visually-hidden">Форма отзыва</h2>
+    <div class="feedback-form__wrapper">
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <div class="feedback-form__block">
+          <h3 class="feedback-form__block-title">Представьтесь:</h3>
+          <div class="feedback-form__block-controls">
+            <div class="form-control">
+              <label class="form-control__label">ИМЯ*:</label>
+              <input class="form-control__input" type="text" name="firstname" value="Пётр" placeholder="Имя"/>
+            </div>
+            <div class="form-control">
+              <label class="form-control__label">ФАМИЛИЯ*:</label>
+              <input class="form-control__input" type="text" name="patronymic" value="Пустота" placeholder="Отчество"/>
+            </div>
+            <div class="form-control">
+              <label class="form-control__label">Отчество:</label>
+              <input class="form-control__input" type="text" name="surname" value="Викторович" placeholder="Фамилия"/>
+            </div>
+          </div>
+        </div>
+
+        <div class="feedback-form__block">
+          <h3 class="feedback-form__block-title">Контактная информация:</h3>
+          <div class="feedback-form__block-controls">
+            <div class="form-control">
+              <label class="form-control__label">Контактный телефон*:</label>
+              <div class="form-control__input-group">
+                <input class="form-control__input" type="text" name="phone" placeholder="Введите телефон"/>
+                <div class="form-control__input-group-icon">
+                  <img src="img/phone.svg" width="18" height="18" alt="Номер телефона">
+                </div>
+              </div>
+            </div>
+            <div class="form-control">
+            <label class="form-control__label">Электронная почта*:</label>
+            <div class="form-control__input-group">
+              <input class="form-control__input" type="text" name="mail" placeholder="Введите e-mail"/>
+              <div class="form-control__input-group-icon">
+                <img src="img/mail.svg" width="16" height="12" alt="Электронная почта">
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+
+        <div class="feedback-form__block">
+          <h3 class="feedback-form__block-title">Ваше общее впечатление:</h3>
+          <div class="feedback-form__block-controls">
+            <div class="form-control">
+              <label class="form-control__label">
+                <input class="form-control__radio" type="radio" name="impression" value="1" checked>
+                Скорее положительное
+              </label>
+            </div>
+            <div class="form-control">
+              <label class="form-control__label">
+                <input class="form-control__radio" type="radio" name="impression" value="2">
+                Скорее отрицательное
+              </label>
+            </div>
+            <div class="form-control">
+              <label class="form-control__label">
+                <input class="form-control__radio" type="radio" name="impression" value="3">
+                Затрудняюсь ответить
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="feedback-form__block">
+          <h3 class="feedback-form__block-title">Посещенные достопримечательности:</h3>
+          <div class="feedback-form__block-controls">
+            <div class="form-control">
+              <label class="form-control__label">
+                <input class="form-control__checkbox" type="checkbox" name="bridge" checked/>
+                Мост Дьявола
+              </label>
+            </div>
+            <div class="form-control">
+              <label class="form-control__label">
+                <input class="form-control__checkbox" type="checkbox" name="hill" checked/>
+                Гора-Колокол
+              </label>
+            </div>
+            <div class="form-control">
+              <label class="form-control__label">
+                <input class="form-control__checkbox" type="checkbox" name="park" checked/>
+                Слайд-парк
+              </label>
+            </div>
+            <div class="form-control">
+              <label class="form-control__label">
+                <input class="form-control__checkbox" type="checkbox" name="rocks"/>
+                Красные скалы
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="feedback-form__block">
+          <h3 class="feedback-form__block-title">Опишите свои эмоции:</h3>
+          <div class="feedback-form__block-controls">
+            <div class="form-control">
+              <textarea class="form-control__textarea" name="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
+            </div>
+          </div>
+        </div>
+
+        <div class="feedback-form__submit-area">
+          <button class="button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
+          <spap class="feedback-form__submit-area-note"></spap>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="main-footer">
+  <div class="main-footer__wrapper">
+    <div class="main-footer__social social">
+      <div class="main-footer__social-tag">
+        <a href="#">#VISITSEDONA</a>
+      </div>
+      <ul class="social__list">
+        <li class="social__item">
+          <a href="#">
+            <img src="img/icon-vk.svg" width="48" height="48" alt="vk">
+          </a>
+        </li>
+
+        <li class="social__item">
+          <a href="#">
+            <img src="img/icon-telegram.svg" width="48" height="48" alt="Telegram">
+          </a>
+        </li>
+
+        <li class="social__item">
+          <a href="#">
+            <img src="img/icon-youtube.svg" width="48" height="48" alt="YouTube">
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="main-footer__copyright copyright">
+      <p class="copyright-text">Разработано</p>
+      <a class="copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+        <img src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy">
+      </a>
+    </div>
+  </div>
+</footer>
+
+<div class="modal visually-hidden">
+  <div class="modal__wrapper">
+
+    <h2 class="modal__header-title">ЧТО-ТО ПОШЛО НЕ ТАК!</h2>
+    <p class="modal__text">
+      Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+    </p>
+    <div class="modal__footer">
+      <button class="button">ОК</button>
+    </div>
+  </div>
+</div>
+
+<div class="modal visually-hidden">
+  <div class="modal__wrapper">
+
+    <h2 class="modal__header-title">Ваш отзыв отправлен!</h2>
+    <p class="modal__text">
+      Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.
+    </p>
+    <div class="modal__footer modal__footer--special">
+      <button class="button">ОК</button>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
