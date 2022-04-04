@@ -47,124 +47,123 @@
   <section class="page-header">
     <div class="page-header__wrapper">
       <h2 class="page-header__title">Оставьте свой отзыв</h2>
-      <p class="page-header__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      <p class="page-header__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
     </div>
-  </section>
+    <div class="feedback-form">
+      <h2 class="visually-hidden">Форма отзыва</h2>
+      <div class="feedback-form__wrapper">
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="feedback-form__block">
+            <legend class="feedback-form__block-title">Представьтесь:</legend>
+            <div class="feedback-form__block-controls">
+              <div class="form-control">
+                <label class="form-control__label">ИМЯ*:</label>
+                <input class="form-control__input" type="text" name="firstname" value="Пётр" placeholder="Имя"/>
+              </div>
+              <div class="form-control">
+                <label class="form-control__label">ФАМИЛИЯ*:</label>
+                <input class="form-control__input" type="text" name="patronymic" value="Пустота" placeholder="Отчество"/>
+              </div>
+              <div class="form-control">
+                <label class="form-control__label">Отчество:</label>
+                <input class="form-control__input" type="text" name="surname" value="Викторович" placeholder="Фамилия"/>
+              </div>
+            </div>
+          </fieldset>
 
-  <section class="feedback-form">
-    <h2 class="visually-hidden">Форма отзыва</h2>
-    <div class="feedback-form__wrapper">
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <div class="feedback-form__block">
-          <h3 class="feedback-form__block-title">Представьтесь:</h3>
-          <div class="feedback-form__block-controls">
-            <div class="form-control">
-              <label class="form-control__label">ИМЯ*:</label>
-              <input class="form-control__input" type="text" name="firstname" value="Пётр" placeholder="Имя"/>
-            </div>
-            <div class="form-control">
-              <label class="form-control__label">ФАМИЛИЯ*:</label>
-              <input class="form-control__input" type="text" name="patronymic" value="Пустота" placeholder="Отчество"/>
-            </div>
-            <div class="form-control">
-              <label class="form-control__label">Отчество:</label>
-              <input class="form-control__input" type="text" name="surname" value="Викторович" placeholder="Фамилия"/>
-            </div>
-          </div>
-        </div>
-
-        <div class="feedback-form__block">
-          <h3 class="feedback-form__block-title">Контактная информация:</h3>
-          <div class="feedback-form__block-controls">
-            <div class="form-control">
-              <label class="form-control__label">Контактный телефон*:</label>
-              <div class="form-control__input-group">
-                <input class="form-control__input" type="text" name="phone" placeholder="Введите телефон"/>
-                <div class="form-control__input-group-icon">
-                  <img src="img/phone.svg" width="18" height="18" alt="Номер телефона">
+          <fieldset class="feedback-form__block">
+            <legend class="feedback-form__block-title">Контактная информация:</legend>
+            <div class="feedback-form__block-controls">
+              <div class="form-control">
+                <label class="form-control__label">Контактный телефон*:</label>
+                <div class="form-control__input-group">
+                  <input class="form-control__input" type="text" name="phone" placeholder="Введите телефон"/>
+                  <div class="form-control__input-group-icon">
+                    <img src="img/phone.svg" width="18" height="18" alt="Номер телефона">
+                  </div>
+                </div>
+              </div>
+              <div class="form-control">
+                <label class="form-control__label">Электронная почта*:</label>
+                <div class="form-control__input-group">
+                  <input class="form-control__input" type="text" name="mail" placeholder="Введите e-mail"/>
+                  <div class="form-control__input-group-icon">
+                    <img src="img/mail.svg" width="16" height="12" alt="Электронная почта">
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="form-control">
-            <label class="form-control__label">Электронная почта*:</label>
-            <div class="form-control__input-group">
-              <input class="form-control__input" type="text" name="mail" placeholder="Введите e-mail"/>
-              <div class="form-control__input-group-icon">
-                <img src="img/mail.svg" width="16" height="12" alt="Электронная почта">
+          </fieldset>
+
+          <fieldset class="feedback-form__block">
+            <legend class="feedback-form__block-title">Ваше общее впечатление:</legend>
+            <div class="feedback-form__block-controls">
+              <div class="form-control">
+                <label class="form-control__label">
+                  <input class="form-control__radio" type="radio" name="impression" value="1" checked>
+                  Скорее положительное
+                </label>
+              </div>
+              <div class="form-control">
+                <label class="form-control__label">
+                  <input class="form-control__radio" type="radio" name="impression" value="2">
+                  Скорее отрицательное
+                </label>
+              </div>
+              <div class="form-control">
+                <label class="form-control__label">
+                  <input class="form-control__radio" type="radio" name="impression" value="3">
+                  Затрудняюсь ответить
+                </label>
               </div>
             </div>
-          </div>
-          </div>
-        </div>
+          </fieldset>
 
-        <div class="feedback-form__block">
-          <h3 class="feedback-form__block-title">Ваше общее впечатление:</h3>
-          <div class="feedback-form__block-controls">
-            <div class="form-control">
-              <label class="form-control__label">
-                <input class="form-control__radio" type="radio" name="impression" value="1" checked>
-                Скорее положительное
-              </label>
+          <fieldset class="feedback-form__block">
+            <legend class="feedback-form__block-title">Посещенные достопримечательности:</legend>
+            <div class="feedback-form__block-controls">
+              <div class="form-control">
+                <label class="form-control__label">
+                  <input class="form-control__checkbox" type="checkbox" name="bridge" checked/>
+                  Мост Дьявола
+                </label>
+              </div>
+              <div class="form-control">
+                <label class="form-control__label">
+                  <input class="form-control__checkbox" type="checkbox" name="hill" checked/>
+                  Гора-Колокол
+                </label>
+              </div>
+              <div class="form-control">
+                <label class="form-control__label">
+                  <input class="form-control__checkbox" type="checkbox" name="park" checked/>
+                  Слайд-парк
+                </label>
+              </div>
+              <div class="form-control">
+                <label class="form-control__label">
+                  <input class="form-control__checkbox" type="checkbox" name="rocks"/>
+                  Красные скалы
+                </label>
+              </div>
             </div>
-            <div class="form-control">
-              <label class="form-control__label">
-                <input class="form-control__radio" type="radio" name="impression" value="2">
-                Скорее отрицательное
-              </label>
-            </div>
-            <div class="form-control">
-              <label class="form-control__label">
-                <input class="form-control__radio" type="radio" name="impression" value="3">
-                Затрудняюсь ответить
-              </label>
-            </div>
-          </div>
-        </div>
+          </fieldset>
 
-        <div class="feedback-form__block">
-          <h3 class="feedback-form__block-title">Посещенные достопримечательности:</h3>
-          <div class="feedback-form__block-controls">
-            <div class="form-control">
-              <label class="form-control__label">
-                <input class="form-control__checkbox" type="checkbox" name="bridge" checked/>
-                Мост Дьявола
-              </label>
+          <fieldset class="feedback-form__block">
+            <legend class="feedback-form__block-title">Опишите свои эмоции:</legend>
+            <div class="feedback-form__block-controls">
+              <div class="form-control">
+                <textarea class="form-control__textarea" name="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
+              </div>
             </div>
-            <div class="form-control">
-              <label class="form-control__label">
-                <input class="form-control__checkbox" type="checkbox" name="hill" checked/>
-                Гора-Колокол
-              </label>
-            </div>
-            <div class="form-control">
-              <label class="form-control__label">
-                <input class="form-control__checkbox" type="checkbox" name="park" checked/>
-                Слайд-парк
-              </label>
-            </div>
-            <div class="form-control">
-              <label class="form-control__label">
-                <input class="form-control__checkbox" type="checkbox" name="rocks"/>
-                Красные скалы
-              </label>
-            </div>
-          </div>
-        </div>
+          </fieldset>
 
-        <div class="feedback-form__block">
-          <h3 class="feedback-form__block-title">Опишите свои эмоции:</h3>
-          <div class="feedback-form__block-controls">
-            <div class="form-control">
-              <textarea class="form-control__textarea" name="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
-            </div>
+          <div class="feedback-form__submit-area">
+            <button class="button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
+            <span class="feedback-form__submit-area-note"></span>
           </div>
-        </div>
-
-        <div class="feedback-form__submit-area">
-          <button class="button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
-          <span class="feedback-form__submit-area-note"></span>
-        </div>
-      </form>
+        </form>
+      </div>
     </div>
   </section>
 </main>
@@ -178,7 +177,7 @@
       <ul class="social__list">
         <li class="social__item">
           <a href="#">
-            <img src="img/icon-vk.svg" width="48" height="48" alt="vk">
+            <img src="img/icon-vk.svg" width="48" height="48" alt="VK">
           </a>
         </li>
 
