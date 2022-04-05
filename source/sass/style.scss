@@ -1,1 +1,58 @@
-// Начните писать стили здесь
+@import "variables";
+@import "fonts";
+@import "main-header";
+@import "main-nav";
+@import "page-header";
+@import "reasons";
+@import "interest";
+@import "map";
+@import "main-footer";
+@import "social";
+@import "copyright";
+
+.visually-hidden {
+  display: none;
+}
+
+.page-body {
+  font-family: "PT Sans", "Arial", sans-serif;
+  background-color: #ffffff;
+  text-align: center;
+  font-weight: 400;
+  margin: 0 auto;
+  max-width: 1200px;
+  min-width: 320px;
+  box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
+}
+
+.button {
+  height: fit-content;
+  vertical-align: center;
+  background-color: $primary-color;
+  color: #ffffff;
+  padding: 16px 49px;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 0 auto;
+  white-space: nowrap;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  border: none;
+  display: block;
+  width: fit-content;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: rgba(#ffffff, 30%);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
+}

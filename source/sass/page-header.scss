@@ -1,0 +1,21 @@
+.page-header {
+  display: block;
+  text-transform: uppercase;
+  width: 100%;
+
+  .page-header__title {
+    padding-top: 54px;
+    line-height: 26px;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .page-header__description {
+    font-style: normal;
+    line-height: 21px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333333;
+  }
+}
