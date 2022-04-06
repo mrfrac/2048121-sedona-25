@@ -4,16 +4,17 @@
   position: relative;
   height: 56px;
   width: 100%;
+  z-index: 2;
+
+  .main-nav__wrapper {
+    padding: 0;
+    margin: 0;
+  }
 
   .main-nav__toggle {
     position: absolute;
     top: 17px;
     right: 21px;
-  }
-
-  .main-nav__wrapper {
-    padding: 0;
-    margin: 0;
   }
 
   .main-nav__list {

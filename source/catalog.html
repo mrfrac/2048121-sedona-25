@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Седона, Оставьте свой отзыв</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/menu.js" type="application/javascript"></script>
 </head>
 <body class="page-body">
 
 <header class="main-header">
   <div class="main-header__wrapper">
-    <a class="main-header__logo">
-      <img src="img/logotype-mobile.svg" width="102" height="84" alt="Седона - небольшой городок в Аризоне">
-    </a>
+    <img class="main-header__logo" src="img/logotype-mobile.svg" width="185" height="96" alt="Седона - небольшой городок в Аризоне">
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Меню</span>
+        <span>Меню</span>
       </button>
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
+        <ul class="main-nav__list visually-hidden">
           <li class="main-nav__list-item">
             <a href="index.html">Главная</a>
           </li>
@@ -33,12 +33,10 @@
       </div>
     </nav>
     <div class="main-header__block">
-    <div class="main-header__block-wrapper">
-      <div class="main-header__block-background">
-        <img src="img/back-mobile.png" width="320" height="389" alt="Седона">
+      <div class="main-header__block-wrapper">
+        <img class="main-header__block-welcome" src="img/sedona.svg" width="229" height="39" alt="Седона">
       </div>
     </div>
-  </div>
   </div>
 </header>
 
@@ -114,9 +112,7 @@
 <footer class="main-footer">
   <div class="main-footer__wrapper">
     <div class="main-footer__social social">
-      <div class="main-footer__social-tag">
-        <a href="#">#VISITSEDONA</a>
-      </div>
+      <a class="main-footer__social-tag" href="#">#VISITSEDONA</a>
       <ul class="social__list">
         <li class="social__item">
           <a href="#">
@@ -138,8 +134,8 @@
       </ul>
     </div>
     <div class="main-footer__copyright copyright">
-      <p class="copyright-text">Разработано</p>
-      <a class="copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+      <p class="copyright__text">Разработано</p>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
         <img src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy">
       </a>
     </div>

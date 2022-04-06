@@ -2,6 +2,7 @@
 
 .reasons {
   text-transform: uppercase;
+  padding-top: 53px;
 
   .reasons__list {
     list-style: none;
@@ -26,6 +27,7 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 26px;
+    margin: 0;
   }
 
   .reasons__item-number {

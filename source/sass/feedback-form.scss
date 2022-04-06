@@ -1,0 +1,128 @@
+.feedback-form {
+  .feedback-form__wrapper {
+    padding-top: 28px;
+  }
+
+  .feedback-form__block {
+    border: none;
+    padding: 0 0 28px;
+    margin: 0;
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .feedback-form__block-title {
+    border-top: 1px solid #e5e5e5;
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-top: 24px;
+    padding-bottom: 20px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    color: #000000;
+  }
+
+  .feedback-form__block-controls {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .feedback-form__submit-area {
+    padding-top: 30px;
+    padding-bottom: 15px;
+  }
+
+  .feedback-form__submit-area-note {
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 21px;
+  }
+}
+
+.form-control {
+  .form-control__label {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #333333;
+    display: block;
+  }
+
+  .form-control__input {
+    height: 58px;
+    width: 280px;
+    background-color: #f2f2f2;
+    border: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    padding: 0 0 0 16px;
+
+    &::placeholder {
+      color: rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  .form-control__radio + label::before {
+    content: "a";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd;
+    border-radius: 0.25em;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+  }
+
+  .form-control__textarea {
+    height: 150px;
+    width: 100%;
+    background-color: #f2f2f2;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    border: none;
+    resize: none;
+    padding: 16px;
+
+    &::placeholder {
+      color: rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  .form-control__input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+
+    .form-control__input {
+      width: 280px - 58px;
+    }
+
+    .form-control__input-group-icon {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      height: 58px;
+      width: 58px;
+      background-color: #e6e6e6;
+    }
+  }
+}

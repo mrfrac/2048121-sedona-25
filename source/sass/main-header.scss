@@ -8,10 +8,11 @@
     left: 0;
     margin: 0 auto;
     text-decoration: none;
+    display: inline-table;
 
     img {
-      max-width: 100%;
-      height: auto;
+      width: auto;
+      height: 96px;
     }
   }
 
@@ -21,6 +22,10 @@
     background-position: bottom center, 50% 20%;
     background-repeat: no-repeat;
     background-size: auto, cover;
+    min-height: 300px;
+    max-height: 518px;
+    min-width: 320px;
+    max-width: 1200px;
 
     .main-header__block-wrapper {
       padding-top: 90px;
@@ -28,6 +33,7 @@
     }
 
     .main-header__block-welcome {
+      width: 40%;
       max-width: 100%;
       height: auto;
     }
