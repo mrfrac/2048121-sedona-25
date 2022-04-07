@@ -1,0 +1,33 @@
+@import "variables";
+
+.button {
+  height: fit-content;
+  vertical-align: center;
+  background-color: $primary-color;
+  color: #ffffff;
+  padding: 16px 49px;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 0 auto;
+  white-space: nowrap;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  border: none;
+  display: block;
+  width: fit-content;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: rgba(#ffffff, 30%);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
+}

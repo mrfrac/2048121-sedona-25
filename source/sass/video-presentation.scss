@@ -2,32 +2,32 @@
   border-top: 1px solid #e5e5e5;
   padding-left: 20px;
   padding-right: 20px;
+}
 
-  .video-presentation__title {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 26px;
-    text-transform: uppercase;
-    padding: 17px 28px;
-    margin: 0;
-  }
+.video-presentation__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  padding: 17px 28px;
+  margin: 0;
+}
 
-  .video-presentation__description {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    text-transform: uppercase;
-    padding-bottom: 38px;
-  }
+.video-presentation__description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  padding-bottom: 38px;
+}
 
-  .video-presentation__link-image {
-    background-image: url("../img/video-mobile.png");
-    background-position: center, 20%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: auto;
-  }
+.video-presentation__link-image {
+  background-image: url("../img/video-mobile.png");
+  background-position: center, 20%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: auto;
 }

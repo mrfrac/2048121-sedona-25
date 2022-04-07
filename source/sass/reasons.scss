@@ -3,114 +3,115 @@
 .reasons {
   text-transform: uppercase;
   padding-top: 53px;
+}
 
-  .reasons__list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
+.reasons__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
-  .reasons__item {
-    color: #ffffff;
-  }
+.reasons__item {
+  color: #ffffff;
+}
 
-  .reasons__item-description {
-    background-color: $primary-color;
-    margin: 0;
-  }
+.reasons__item-description {
+  background-color: $primary-color;
+  margin: 0;
+}
 
-  .reasons__item-title {
-    padding-top: 54px;
-    padding-left: 20%;
-    padding-right: 20%;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 26px;
-    margin: 0;
-  }
+.reasons__item-title {
+  padding: 54px 20% 20px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0;
+}
 
-  .reasons__item-number {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    padding-left: 5%;
-    padding-right: 5%;
-  }
+.reasons__item-number {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
 
-  .reasons__item-note {
-    @extend .reasons__item-number;
-    padding-bottom: 40px;
-    margin-bottom: 0;
-  }
+.reasons__item-note {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 40px;
+  margin-bottom: 0;
+}
 
-  .reasons__item-photo {
-    background-position: bottom center, 50% 20%;
-    background-repeat: no-repeat;
-    background-size: auto, cover;
-    width: 100%;
-    height: auto;
-  }
+.reasons__item-photo {
+  background-position: bottom center, 50% 20%;
+  background-repeat: no-repeat;
+  background-size: auto, cover;
+  width: 100%;
+  height: auto;
+}
 
-  .reasons__item-features {
-    background-color: #ffffff;
-    color: #000000;
-    list-style: none;
-    display: flex;
-    flex-flow: column;
-    padding: 22px 18px 0 18px;
+.reasons__item-features {
+  background-color: #ffffff;
+  color: #000000;
+  list-style: none;
+  display: flex;
+  flex-flow: column;
+  padding: 22px 18px 0 18px;
+}
 
-    .reasons__item-feature {
-      padding-bottom: 22px;
-    }
+.reasons__item-feature {
+  padding-bottom: 22px;
+}
 
-    .reasons__item-feature-title {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-    }
+.reasons__item-feature-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 
-    .reasons__item-feature-title-text {
-      margin: 0;
-      padding: 0 0 0 7px;
-      vertical-align: center;
-      font-style: normal;
-      font-weight: 700;
-      font-size: 18px;
-      line-height: 26px;
-    }
+.reasons__item-feature-title-text {
+  margin: 0;
+  padding: 0 0 0 7px;
+  vertical-align: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
 
-    .reasons__item-feature-description {
-      text-align: left;
-      padding-left: 47px;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 21px;
-      color: #333333;
-    }
-  }
+.reasons__item-feature-description {
+  text-align: left;
+  padding-left: 47px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+}
 
-  .reasons__list--simple {
-    background-color: #eeeeee;
-    padding-left: 18px;
-    padding-right: 18px;
-  }
+.reasons__list--simple {
+  background-color: #eeeeee;
+  padding-left: 18px;
+  padding-right: 18px;
+}
 
-  .reasons__list--simple .reasons__item {
-    background-color: #eeeeee;
-  }
+.reasons__list--simple .reasons__item {
+  background-color: #eeeeee;
+}
 
-  .reasons__list--simple .reasons__item-description {
-    background-color: #eeeeee;
-    color: #333333;
-    margin: 0;
-    border-bottom: 1px solid #d6d6d6;
-  }
+.reasons__list--simple .reasons__item-description {
+  background-color: #eeeeee;
+  color: #333333;
+  margin: 0;
+  border-bottom: 1px solid #d6d6d6;
+}
 
-  .reasons__list--simple .reasons__item-title {
-    color: #000000;
-    margin-top: 0;
-  }
+.reasons__list--simple .reasons__item-title {
+  color: #000000;
+  margin-top: 0;
 }
