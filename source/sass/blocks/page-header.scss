@@ -1,3 +1,5 @@
+@import "variables";
+
 .page-header {
   display: block;
   text-transform: uppercase;
@@ -19,7 +21,7 @@
   line-height: 21px;
   font-size: 14px;
   font-weight: 400;
-  color: #333333;
+  color: $description-font-color;
   margin: 0;
   padding-top: 35px;
   padding-left: 6%;

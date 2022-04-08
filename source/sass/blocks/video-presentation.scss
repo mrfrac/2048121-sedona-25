@@ -1,5 +1,7 @@
+@import "variables";
+
 .video-presentation {
-  border-top: 1px solid #e5e5e5;
+  border-top: 1px solid $hr-color;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -24,10 +26,7 @@
 }
 
 .video-presentation__link-image {
-  background-image: url("../img/video-mobile.png");
-  background-position: center, 20%;
-  background-repeat: no-repeat;
-  background-size: cover;
   width: 100%;
   height: auto;
+  object-fit: contain;
 }

@@ -1,20 +1,29 @@
-@import "fonts";
-@import "page-body";
-@import "main-header";
-@import "main-nav";
-@import "page-header";
-@import "reasons";
-@import "interest";
-@import "map";
-@import "main-footer";
-@import "social";
-@import "copyright";
-@import "feedback-form";
-@import "form-control";
-@import "button";
-@import "gallery";
-@import "video-presentation";
+@import "blocks/fonts";
+@import "blocks/page-body";
+@import "blocks/main-header";
+@import "blocks/main-nav";
+@import "blocks/page-header";
+@import "blocks/reasons";
+@import "blocks/interest";
+@import "blocks/map";
+@import "blocks/main-footer";
+@import "blocks/social";
+@import "blocks/copyright";
+@import "blocks/feedback-form";
+@import "blocks/form-control";
+@import "blocks/button";
+@import "blocks/gallery";
+@import "blocks/video-presentation";
 
 .visually-hidden {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
