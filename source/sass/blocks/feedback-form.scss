@@ -1,0 +1,46 @@
+@import "variables";
+
+.feedback-form__wrapper {
+  padding-top: 28px;
+}
+
+.feedback-form__block {
+  border: none;
+  padding: 0 0 28px;
+  margin: 0;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.feedback-form__block-title {
+  border-top: 1px solid $hr-color;
+  display: block;
+  width: 100%;
+  height: auto;
+  padding-top: 24px;
+  padding-bottom: 20px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.feedback-form__block-controls {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.feedback-form__submit-area {
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+
+.feedback-form__submit-area-note {
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 21px;
+}

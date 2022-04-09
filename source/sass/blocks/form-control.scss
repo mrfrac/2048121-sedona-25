@@ -1,0 +1,66 @@
+@import "variables";
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control__label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: $description-font-color;
+  display: block;
+}
+
+.form-control__input {
+  height: 58px;
+  width: auto;
+  background-color: $controls-background-color;
+  border: none;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  padding: 0 0 0 16px;
+
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.form-control__textarea {
+  height: 150px;
+  width: auto;
+  background-color: $controls-background-color;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  border: none;
+  resize: none;
+  padding: 16px;
+
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.form-control__input-group {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+
+.form-control__input-group-icon {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 58px;
+  width: 58px;
+  background-color: #e6e6e6;
+}

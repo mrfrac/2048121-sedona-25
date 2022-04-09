@@ -1,0 +1,35 @@
+.main-header__logo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  text-decoration: none;
+  display: inline-table;
+  width: auto;
+  height: 96px;
+}
+
+.main-header__block {
+  display: block;
+  background-image: url("../img/intro-triangle.svg"), url("../img/back-desktop.png");
+  background-position: bottom center, 50% 20%;
+  background-repeat: no-repeat;
+  background-size: auto, cover;
+  min-height: 300px;
+  max-height: 518px;
+  min-width: 320px;
+  max-width: 1200px;
+  background-color: #9bd3f1;
+}
+
+.main-header__block-wrapper {
+  padding-top: 90px;
+  padding-bottom: 85px;
+}
+
+.main-header__block-welcome {
+  width: 40%;
+  max-width: 100%;
+  height: auto;
+}

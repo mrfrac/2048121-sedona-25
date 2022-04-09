@@ -1,0 +1,117 @@
+@import "variables";
+
+$reason-background-color: #eeeeee;
+
+.reasons {
+  text-transform: uppercase;
+  padding-top: 53px;
+}
+
+.reasons__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.reasons__item {
+  color: #ffffff;
+}
+
+.reasons__item-description {
+  background-color: $primary-color;
+  margin: 0;
+}
+
+.reasons__item-title {
+  padding: 54px 20% 20px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0;
+}
+
+.reasons__item-number {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.reasons__item-note {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 40px;
+  margin-bottom: 0;
+}
+
+.reasons__item-photo {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.reasons__item-features {
+  background-color: #ffffff;
+  color: #000000;
+  list-style: none;
+  display: flex;
+  flex-flow: column;
+  padding: 22px 18px 0 18px;
+}
+
+.reasons__item-feature {
+  padding-bottom: 22px;
+}
+
+.reasons__item-feature-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.reasons__item-feature-title-text {
+  margin: 0;
+  padding: 0 0 0 7px;
+  vertical-align: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.reasons__item-feature-description {
+  text-align: left;
+  padding-left: 47px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: $description-font-color;
+}
+
+.reasons__list--simple {
+  background-color: $reason-background-color;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.reasons__list--simple .reasons__item {
+  background-color: $reason-background-color;
+}
+
+.reasons__list--simple .reasons__item-description {
+  background-color: $reason-background-color;
+  color: $description-font-color;
+  margin: 0;
+  border-bottom: 1px solid #d6d6d6;
+}
+
+.reasons__list--simple .reasons__item-title {
+  color: #000000;
+  margin-top: 0;
+}
