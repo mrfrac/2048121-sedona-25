@@ -20,3 +20,16 @@
   margin: 0;
   padding: 32px 0 32px 0;
 }
+
+@media (min-width: $tablet-width) {
+  .interest__wrapper {
+    padding: 60px 0 10px;
+  }
+
+  .interest__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 26px;
+  }
+}

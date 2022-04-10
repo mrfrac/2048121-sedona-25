@@ -29,7 +29,12 @@
 }
 
 .main-header__block-welcome {
-  width: 40%;
   max-width: 100%;
   height: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .main-header__logo {
+    z-index: 3;
+  }
 }

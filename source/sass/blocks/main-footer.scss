@@ -10,3 +10,22 @@
   line-height: 26px;
   color: #000000;
 }
+
+@media (min-width: $tablet-width) {
+  .main-footer__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    padding: 39px 5% 36px;
+  }
+
+  .main-footer__social-tag {
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-footer__wrapper {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
