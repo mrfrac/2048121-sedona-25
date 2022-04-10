@@ -1,4 +1,5 @@
-@import "blocks/fonts";
+@import "variables";
+@import "fonts";
 @import "blocks/page-body";
 @import "blocks/main-header";
 @import "blocks/main-nav";
@@ -26,4 +27,8 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.hidden {
+  display: none;
 }
