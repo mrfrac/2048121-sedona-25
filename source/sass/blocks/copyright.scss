@@ -13,3 +13,10 @@
   line-height: 21px;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    padding-top: 0;
+    justify-content: right;
+  }
+}

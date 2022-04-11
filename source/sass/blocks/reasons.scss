@@ -1,5 +1,3 @@
-@import "variables";
-
 $reason-background-color: #eeeeee;
 
 .reasons {
@@ -40,7 +38,7 @@ $reason-background-color: #eeeeee;
 
 .reasons__item-note {
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 14px;
   line-height: 21px;
   padding-left: 5%;
@@ -114,4 +112,117 @@ $reason-background-color: #eeeeee;
 .reasons__list--simple .reasons__item-title {
   color: #000000;
   margin-top: 0;
+}
+
+.reasons__list--simple .reasons__item-note {
+  font-weight: 400;
+}
+
+@media (min-width: $tablet-width) {
+  .reasons__item {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-areas: "a b" "c c";
+
+    &:nth-child(2n) {
+      grid-template-columns: 1fr 0.5fr;
+      grid-template-areas: "b a" "c c";
+    }
+  }
+
+  .reasons__item-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+  }
+
+  .reasons__item-number {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .reasons__item-note {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .reasons__item-description {
+    grid-area: a;
+    height: 256px;
+    border-bottom: none;
+  }
+
+  .reasons__item-photo {
+    // width: 100%;
+    height: 256px;
+    object-fit: cover;
+    grid-area: b;
+  }
+
+  .reasons__item-features {
+    grid-area: c;
+    display: flex;
+    flex-flow: row;
+    padding: 60px 5%;
+  }
+
+  .reasons__item-feature {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0;
+    padding-right: 10px;
+
+    &:last-of-type {
+      padding-right: 0;
+    }
+  }
+
+  .reasons__item-feature-title {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reasons__item-feature-title-text {
+    padding: 26px 0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+  }
+
+  .reasons__item-feature-title-icon {
+    height: 70px;
+    width: auto;
+  }
+
+  .reasons__item-feature-description {
+    text-align: center;
+    padding-left: 0;
+    margin: 0;
+  }
+
+  .reasons__list--simple {
+    display: grid;
+    grid-auto-flow: column;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .reasons__item--simple {
+    display: block;
+    width: 90%;
+
+    .reasons__item-description {
+      border-bottom: none;
+    }
+
+    .reasons__item-note {
+      font-weight: 400;
+    }
+  }
 }
