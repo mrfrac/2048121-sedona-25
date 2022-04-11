@@ -28,3 +28,31 @@
   height: auto;
   object-fit: contain;
 }
+
+@media (min-width: $tablet-width) {
+  .video-presentation {
+    padding-right: 60px;
+    padding-left: 60px;
+    border-top: none;
+    padding-top: 41px;
+  }
+
+  .video-presentation__link-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .video-presentation__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 26px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video-presentation {
+    padding-top: 49px;
+  }
+}

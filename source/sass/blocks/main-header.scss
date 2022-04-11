@@ -31,10 +31,21 @@
 .main-header__block-welcome {
   max-width: 100%;
   height: auto;
+  width: 282px;
+}
+
+.main-header__block-sedona {
+  max-width: 100%;
+  height: auto;
+  width: 229px;
 }
 
 @media (min-width: $tablet-width) {
   .main-header__logo {
     z-index: 3;
+  }
+
+  .main-header__block-sedona {
+    width: 457px;
   }
 }
