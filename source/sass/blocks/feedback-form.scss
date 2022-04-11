@@ -1,5 +1,7 @@
 .feedback-form__wrapper {
   padding-top: 28px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .feedback-form__block {
@@ -26,8 +28,8 @@
 }
 
 .feedback-form__block-controls {
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .feedback-form__submit-area {
@@ -48,9 +50,9 @@
 }
 
 @media (min-width: $tablet-width) {
-  .feedback-form__block-controls {
-    padding-right: 60px;
+  .feedback-form__wrapper {
     padding-left: 60px;
+    padding-right: 60px;
   }
 
   .feedback-form__block-title {
@@ -67,7 +69,12 @@
   .feedback-form__form {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "name contacts" "impression impression" "attraction attraction" "emotions emotions" "submit submit";
+    grid-template-areas: "name contacts"
+      "impression impression"
+      "attraction attraction"
+      "emotions emotions"
+      "submit submit";
+    grid-column-gap: 0;
   }
 
   .feedback-form__block {
@@ -76,8 +83,16 @@
       border-right: 1px solid $hr-color;
     }
 
+    &:nth-child(1) .feedback-form__block-controls {
+      padding-right: 40px;
+    }
+
     &:nth-child(2) {
       grid-area: contacts;
+    }
+
+    &:nth-child(2) .feedback-form__block-controls {
+      padding-left: 40px;
     }
 
     &:nth-child(3) {
@@ -115,8 +130,6 @@
     flex-flow: row;
     align-items: baseline;
     justify-content: space-between;
-    padding-left: 60px;
-    padding-right: 60px;
   }
 
   .feedback-form__submit-area-note {
@@ -124,5 +137,22 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback-form__wrapper {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+
+  .feedback-form__block {
+    &:nth-child(1) .feedback-form__block-controls {
+      padding-right: 60px;
+    }
+
+    &:nth-child(2) .feedback-form__block-controls {
+      padding-left: 60px;
+    }
   }
 }
