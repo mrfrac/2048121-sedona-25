@@ -1,20 +1,18 @@
 .button {
   height: fit-content;
-  vertical-align: center;
   background-color: $primary-color;
   color: #ffffff;
-  padding: 16px 49px;
+  padding: 16px 32px;
   text-transform: uppercase;
   text-decoration: none;
-  margin: 0 auto;
   white-space: nowrap;
   font-style: normal;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
   border: none;
-  display: block;
   max-width: 458px;
+  width: 100%;
 
   &:hover {
     background-color: #669ec0;

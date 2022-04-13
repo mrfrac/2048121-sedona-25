@@ -4,7 +4,7 @@
   text-align: center;
   font-weight: 400;
   margin: 0 auto;
-  max-width: 1200px;
-  min-width: 320px;
+  max-width: $desktop-width;
+  min-width: $mobile-width;
   box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
 }
