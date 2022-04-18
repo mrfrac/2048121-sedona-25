@@ -21,7 +21,7 @@ $reason-background-color: #eeeeee;
 }
 
 .reasons__item-title {
-  padding: 54px 20% 20px;
+  padding: 54px 0 20px;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -100,6 +100,9 @@ $reason-background-color: #eeeeee;
 
 .reasons__list--simple .reasons__item {
   background-color: $reason-background-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .reasons__list--simple .reasons__item-description {
@@ -209,8 +212,8 @@ $reason-background-color: #eeeeee;
   .reasons__list--simple {
     display: grid;
     grid-auto-flow: column;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 33px;
+    padding-right: 33px;
   }
 
   .reasons__item--simple {

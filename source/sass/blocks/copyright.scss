@@ -4,6 +4,16 @@
   justify-content: center;
   align-items: center;
   width: auto;
+
+  &:hover {
+    color: #81b3d2;
+    filter: invert(74%) sepia(35%) saturate(398%) hue-rotate(161deg) brightness(89%) contrast(84%);
+  }
+
+  &:active {
+    color: #b3b3b3;
+    filter: invert(80%) sepia(7%) saturate(0%) hue-rotate(303deg) brightness(90%) contrast(89%);
+  }
 }
 
 .copyright__text {

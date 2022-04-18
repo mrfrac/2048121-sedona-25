@@ -1,10 +1,17 @@
 (function () {
   const button = document.querySelector(".main-nav__toggle");
+  const mainNav = document.querySelector(".main-nav");
 
-  if (button) {
-    const navigationElement = document.querySelector(".main-nav__list");
-    button.addEventListener("click", () => {
-      navigationElement.classList.toggle("main-nav__list--open");
-    });
-  }
+  mainNav.classList.remove("main-nav--nojs");
+  mainNav.classList.add("main-nav--closed");
+
+  button.addEventListener("click", () => {
+    if (mainNav.classList.contains("main-nav--opened")) {
+      mainNav.classList.remove("main-nav--opened")
+      mainNav.classList.add("main-nav--closed");
+    } else {
+      mainNav.classList.remove("main-nav--closed")
+      mainNav.classList.add("main-nav--opened");
+    }
+  });
 })();
