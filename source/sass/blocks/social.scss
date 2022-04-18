@@ -13,6 +13,14 @@
 
 .social__item-link {
   text-decoration: none;
+
+  &:hover {
+    filter: invert(67%) sepia(41%) saturate(405%) hue-rotate(159deg) brightness(81%) contrast(88%);
+  }
+
+  &:active {
+    filter: invert(65%) sepia(36%) saturate(619%) hue-rotate(160deg) brightness(79%) contrast(84%);
+  }
 }
 
 @media (min-width: $tablet-width) {
