@@ -3,6 +3,11 @@ const modals = document.getElementsByClassName("modal");
 const overlay = document.getElementsByClassName("overlay").item(0);
 const modalButtons = document.getElementsByClassName("modal__footer-button");
 
+document.querySelector(".feedback-form__submit-area>button").addEventListener("click", (event) => {
+  event.preventDefault();
+  showModal();
+})
+
 for (let button of modalButtons) {
   button.addEventListener("click", () => {
     closeModal();
@@ -20,9 +25,4 @@ function closeModal() {
     modal.style.display = "none";
   }
   overlay.style.display = "none";
-}
-
-function onFormSubmit(event) {
-  event.preventDefault();
-  showModal();
 }
