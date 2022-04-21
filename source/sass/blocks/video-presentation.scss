@@ -23,10 +23,9 @@
   padding-bottom: 38px;
 }
 
-.video-presentation__link-image {
+.video-presentation__embed {
   width: 100%;
-  height: auto;
-  object-fit: contain;
+  height: 177px;
 }
 
 @media (min-width: $tablet-width) {
@@ -37,10 +36,9 @@
     padding-top: 41px;
   }
 
-  .video-presentation__link-image {
+  .video-presentation__embed {
     width: 100%;
-    height: auto;
-    object-fit: cover;
+    height: 500px;
   }
 
   .video-presentation__title {
@@ -54,5 +52,11 @@
 @media (min-width: $desktop-width) {
   .video-presentation {
     padding-top: 49px;
+  }
+
+  .video-presentation__embed {
+    width: 800px;
+    height: 500px;
+    object-fit: cover;
   }
 }

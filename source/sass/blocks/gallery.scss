@@ -54,7 +54,8 @@
 }
 
 .gallery__list-item-likes-icon {
-  padding-right: 14px;
+  padding-right: 9px;
+  fill: #c2c2c2;
 }
 
 .gallery__list-item-likes-amount {
@@ -140,5 +141,9 @@
   .gallery__list-description {
     opacity: 1;
     padding: 22px 0 15px 20px;
+  }
+
+  .gallery__list-item-likes-icon {
+    fill: currentColor;
   }
 }
