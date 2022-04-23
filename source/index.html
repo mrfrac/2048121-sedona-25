@@ -60,7 +60,11 @@
               <span class="reasons__item-number">— №1 —</span>
               <p class="reasons__item-note">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
             </div>
-            <img class="reasons__item-photo" src="img/photo-city@1x1.png" width="320" height="260" alt="Город Седона">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-city-desktop.png 1x, img/photo-city-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-city-tablet.png 1x, img/photo-city-tablet@2x.png 2x">
+              <img class="reasons__item-photo" src="img/photo-city.png" width="320" height="260" alt="Город Седона" srcset="img/photo-city@2x.png 2x">
+            </picture>
             <ul class="reasons__item-features">
               <li class="reasons__item-feature">
                 <div class="reasons__item-feature-title">
@@ -94,7 +98,11 @@
               <span class="reasons__item-number">— №2 —</span>
               <p class="reasons__item-note">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
-            <img class="reasons__item-photo" src="img/photo-bridge@1x1.png" width="320" height="260" alt="Мост дьявола">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop.png 1x, img/photo-bridge-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet.png 1x, img/photo-bridge-tablet@2x.png 2x">
+              <img class="reasons__item-photo" src="img/photo-bridge.png" width="320" height="260" alt="Мост дьявола" srcset="img/photo-bridge@2x.png 2x">
+            </picture>
           </li>
         </ol>
         <ol class="reasons__list reasons__list--simple">
