@@ -13,13 +13,19 @@
 
 .social__item-link {
   text-decoration: none;
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  background-color: #81b3d2;
+  fill: #ffffff;
 
   &:hover {
-    filter: invert(67%) sepia(41%) saturate(405%) hue-rotate(159deg) brightness(81%) contrast(88%);
+    background-color: #669ec0;
   }
 
   &:active {
-    filter: invert(65%) sepia(36%) saturate(619%) hue-rotate(160deg) brightness(79%) contrast(84%);
+    background-color: #5496bd;
+    fill: rgba(#ffffff, 0.3);
   }
 }
 
