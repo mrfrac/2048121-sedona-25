@@ -61,6 +61,9 @@
               <p class="reasons__item-note">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
             </div>
             <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-city-desktop.webp 1x, img/photo-city-desktop@2x.webp 2x" type="image/webp">
+              <source media="(min-width: 768px)" srcset="img/photo-city-tablet.webp 1x, img/photo-city-tablet@2x.webp 2x" type="image/webp">
+              <source srcset="img/photo-city.webp 1x, img/photo-city@2x.webp 2x" type="image/webp">
               <source media="(min-width: 1200px)" srcset="img/photo-city-desktop.png 1x, img/photo-city-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/photo-city-tablet.png 1x, img/photo-city-tablet@2x.png 2x">
               <img class="reasons__item-photo" src="img/photo-city.png" width="320" height="260" alt="Город Седона" srcset="img/photo-city@2x.png 2x">
@@ -68,7 +71,9 @@
             <ul class="reasons__item-features">
               <li class="reasons__item-feature">
                 <div class="reasons__item-feature-title">
-                  <img class="reasons__item-feature-title-icon" src="img/icon-house.svg" width="40" height="35" alt="Жильё">
+                  <svg class="reasons__item-feature-title-icon" width="40" height="35">
+                    <use xlink:href="img/sprite.svg#icon-house"></use>
+                  </svg>
                   <h4 class="reasons__item-feature-title-text">Жильё</h4>
                 </div>
                 <p class="reasons__item-feature-description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
@@ -76,7 +81,9 @@
 
               <li class="reasons__item-feature">
                 <div class="reasons__item-feature-title">
-                  <img class="reasons__item-feature-title-icon" src="img/icon-burger.svg" width="40" height="35" alt="Еда">
+                  <svg class="reasons__item-feature-title-icon" width="40" height="35">
+                    <use xlink:href="img/sprite.svg#icon-burger"></use>
+                  </svg>
                   <h4 class="reasons__item-feature-title-text">Еда</h4>
                 </div>
                 <p class="reasons__item-feature-description">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
@@ -84,7 +91,9 @@
 
               <li class="reasons__item-feature">
                 <div class="reasons__item-feature-title">
-                  <img class="reasons__item-feature-title-icon" src="img/icon-gift.svg" width="32" height="38" alt="Сувениры">
+                  <svg class="reasons__item-feature-title-icon" width="40" height="35">
+                    <use xlink:href="img/sprite.svg#icon-gift"></use>
+                  </svg>
                   <h4 class="reasons__item-feature-title-text">Сувениры</h4>
                 </div>
                 <p class="reasons__item-feature-description">Не только китайского, но и местного производства!</p>
@@ -160,19 +169,25 @@
       <ul class="social__list">
         <li class="social__item">
           <a class="social__item-link" href="#">
-            <img src="img/icon-vk.svg" width="48" height="48" alt="VK">
+            <svg width="48" height="48">
+              <use xlink:href="img/sprite.svg#logo-vk"></use>
+            </svg>
           </a>
         </li>
 
         <li class="social__item">
           <a class="social__item-link" href="#">
-            <img src="img/icon-telegram.svg" width="48" height="48" alt="Telegram">
+            <svg width="48" height="48">
+              <use xlink:href="img/sprite.svg#logo-telegram"></use>
+            </svg>
           </a>
         </li>
 
         <li class="social__item">
           <a class="social__item-link" href="#">
-            <img src="img/icon-youtube.svg" width="48" height="48" alt="YouTube">
+            <svg width="48" height="48">
+              <use xlink:href="img/sprite.svg#logo-youtube"></use>
+            </svg>
           </a>
         </li>
       </ul>
@@ -180,7 +195,9 @@
     <div class="main-footer__copyright copyright">
       <p class="copyright__text">Разработано</p>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <img src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy">
+        <svg width="27" height="34">
+          <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
+        </svg>
       </a>
     </div>
   </div>

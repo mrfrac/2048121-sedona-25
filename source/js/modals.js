@@ -3,7 +3,7 @@ const modals = document.getElementsByClassName("modal");
 const overlay = document.getElementsByClassName("overlay").item(0);
 const modalButtons = document.getElementsByClassName("modal__footer-button");
 
-document.querySelector(".feedback-form__submit-area>button").addEventListener("click", (event) => {
+document.querySelector(".feedback-form__submit-button").addEventListener("click", (event) => {
   event.preventDefault();
   showModal();
 })
