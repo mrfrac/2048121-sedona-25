@@ -64,7 +64,7 @@ export const styles = () => {
 }
 
 const createWebp = () => {
-  return gulp.src('source/img/**/*.{png,jpg}')
+  return gulp.src('source/img/*.{png,jpg}')
     .pipe(squoosh({
       webp: {}
     }))
@@ -98,7 +98,7 @@ const scripts = () => {
 }
 
 const copyImages = () => {
-  return gulp.src('source/img/**/*.{png,jpg}')
+  return gulp.src('source/img/*.{png,jpg}')
   .pipe(gulp.dest('build/img'))
 }
 
@@ -114,7 +114,7 @@ const reload = (done) => {
 
 const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
-  gulp.watch('source/js/script.js', gulp.series(scripts));
+  gulp.watch('source/js/*.js', gulp.series(scripts));
   gulp.watch('source/*.html', gulp.series(html, reload));
 }
 
