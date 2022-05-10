@@ -22,6 +22,11 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+  padding-right: 11px;
+}
+
+.copyright__link {
+  fill: #000000;
 }
 
 @media (min-width: $tablet-width) {

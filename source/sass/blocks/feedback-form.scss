@@ -33,7 +33,7 @@
 }
 
 .feedback-form__submit-area {
-  padding-top: 30px;
+  padding-top: 28px;
   padding-bottom: 15px;
   display: flex;
   flex-flow: column;
@@ -47,6 +47,9 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 21px;
+  display: block;
+  width: 100%;
+  text-align: right;
 }
 
 @media (min-width: $tablet-width) {
@@ -64,6 +67,7 @@
     line-height: 26px;
     padding-right: 5%;
     padding-left: 5%;
+    padding-bottom: 28px;
   }
 
   .feedback-form__form {
@@ -103,7 +107,7 @@
     &:nth-child(3) .feedback-form__block-controls {
       display: flex;
       flex-flow: row;
-      justify-content: center;
+      justify-content: left;
       flex-wrap: wrap;
     }
 
@@ -120,6 +124,7 @@
     }
 
     &:nth-child(5) {
+      border-top: 1px solid $hr-color;
       grid-area: emotions;
     }
   }
@@ -153,6 +158,17 @@
 
     &:nth-child(2) .feedback-form__block-controls {
       padding-left: 60px;
+    }
+
+    &:nth-child(3) .feedback-form__block-controls {
+      justify-content: center;
+    }
+
+    &:nth-child(4) .feedback-form__block-controls {
+      display: flex;
+      flex-flow: row;
+      justify-content: center;
+      flex-wrap: wrap;
     }
   }
 }

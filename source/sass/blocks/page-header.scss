@@ -32,5 +32,20 @@
     font-weight: 700;
     font-size: 30px;
     line-height: 26px;
+    padding: 48px 124px 0;
+  }
+
+  .page-header__description {
+    padding: 38px 124px 57px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__title {
+    padding: 59px 359px 0 358px;
+  }
+
+  .page-header__description {
+    padding: 38px 359px 45px 358px;
   }
 }
