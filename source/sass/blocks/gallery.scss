@@ -115,6 +115,14 @@
   }
 }
 
+@media (min-width: $tablet-width) and (max-width: $tablet-only-width) {
+  .gallery__list-item {
+    &:nth-child(3n) .gallery__list-item-caption {
+      background-color: #eaeaea;
+    }
+  }
+}
+
 @media (min-width: $desktop-width) {
   .gallery {
     padding-left: 0;

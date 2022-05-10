@@ -7,3 +7,4 @@ $mobile-width: 320px;
 $tablet-width: 768px;
 $desktop-width: 1200px;
 $mobile-only-width: $tablet-width - 1;
+$tablet-only-width: $desktop-width - 1;
