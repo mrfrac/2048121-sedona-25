@@ -152,10 +152,6 @@ $reason-background-color: #eeeeee;
   color: $description-font-color;
   margin: 0;
   padding-top: 10px;
-
-  br {
-    display: none;
-  }
 }
 
 .reasons__list--simple {
@@ -240,6 +236,9 @@ $reason-background-color: #eeeeee;
   }
 
   .reasons__item--simple {
+    display: block;
+    width: 90%;
+
     &:first-child .reasons__item-title {
       padding-top: 42px;
       padding-left: 27px;
@@ -255,25 +254,37 @@ $reason-background-color: #eeeeee;
 
     &:nth-child(3) .reasons__item-title {
       padding-top: 42px;
-      padding-left: 32px;
+      padding-left: 34px;
+      padding-right: 0;
     }
 
     &:nth-child(n+2) .reasons__item-note {
       padding-bottom: 12px;
+      padding-left: 45px;
+      padding-right: 45px;
     }
 
     &:nth-child(3) .reasons__item-note {
-      padding-left: 37px;
+      padding-left: 31px;
+      padding-right: 0;
     }
 
     &:nth-child(3) .reasons__item-number {
-      padding-left: 17px;
+      padding-left: 37px;
     }
 
     &:first-child .reasons__item-note {
       padding-bottom: 24px;
       padding-right: 0;
       padding-left: 0;
+    }
+
+    .reasons__item-description {
+      border-bottom: none;
+    }
+
+    .reasons__item-note {
+      font-weight: 400;
     }
   }
 
@@ -382,10 +393,6 @@ $reason-background-color: #eeeeee;
     text-align: center;
     padding-left: 0;
     margin: -13px 0 0;
-
-    br {
-      display: inline;
-    }
   }
 
   .reasons__item-feature:nth-child(1) .reasons__item-feature-description {
@@ -413,25 +420,10 @@ $reason-background-color: #eeeeee;
     padding-bottom: 0;
   }
 
-  .reasons__item--simple {
-    display: block;
-    width: 90%;
-
-    .reasons__item-description {
-      border-bottom: none;
-    }
-
-    .reasons__item-note {
-      font-weight: 400;
-    }
-  }
-
   .reasons__list--simple .reasons__item {
     border-bottom: none;
     padding-right: 62px;
   }
-
-
 }
 
 @media (min-width: $desktop-width) {
@@ -444,6 +436,23 @@ $reason-background-color: #eeeeee;
   }
 
   .reasons__item-features {
-    padding: 57px 78px 80px 58px;
+    padding: 57px 0 50px 0;
+  }
+
+  .reasons__item-feature:nth-child(1) .reasons__item-feature-description {
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-right: 18px;
+  }
+
+  .reasons__item-feature:nth-child(2) .reasons__item-feature-description {
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-right: 0;
+  }
+
+  .reasons__item-feature:nth-child(3) .reasons__item-feature-description {
+    padding-top: 10px;
+    padding-left: 53px;
   }
 }

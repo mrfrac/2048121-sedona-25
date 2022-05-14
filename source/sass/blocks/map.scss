@@ -7,3 +7,9 @@
   height: 350px;
   object-fit: cover;
 }
+
+@media (min-width: $desktop-width) {
+  .map__wrapper {
+    padding-top: 73px;
+  }
+}
