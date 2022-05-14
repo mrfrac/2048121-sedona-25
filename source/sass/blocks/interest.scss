@@ -18,8 +18,12 @@
   line-height: 21px;
   color: $description-font-color;
   margin: 0;
-  padding: 20px 0 28px;
+  padding: 20px 0 49px;
   text-transform: uppercase;
+
+  br {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -32,5 +36,14 @@
     font-weight: 700;
     font-size: 30px;
     line-height: 26px;
+  }
+
+  .interest__text {
+    padding-top: 30px;
+    padding-bottom: 59px;
+
+    br {
+      display: inline;
+    }
   }
 }

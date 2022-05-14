@@ -152,6 +152,10 @@ $reason-background-color: #eeeeee;
   color: $description-font-color;
   margin: 0;
   padding-top: 10px;
+
+  br {
+    display: none;
+  }
 }
 
 .reasons__list--simple {
@@ -217,6 +221,60 @@ $reason-background-color: #eeeeee;
       grid-template-areas: "b a" "c c";
       height: 256px;
     }
+
+    &:first-child .reasons__item-title {
+      padding: 40px 32px 13px;
+    }
+
+    &:first-child .reasons__item-note {
+      padding: 23px 32px 13px;
+    }
+
+    &:first-child .reasons__item-number {
+      padding-left: 23px;
+    }
+
+    &:nth-child(2) .reasons__item-title {
+      padding: 43px 53px 13px;
+    }
+  }
+
+  .reasons__item--simple {
+    &:first-child .reasons__item-title {
+      padding-top: 42px;
+      padding-left: 27px;
+    }
+
+    &:first-child .reasons__item-number {
+      padding-left: 18px;
+    }
+
+    &:nth-child(n+2) .reasons__item-title {
+      padding-top: 42px;
+    }
+
+    &:nth-child(3) .reasons__item-title {
+      padding-top: 42px;
+      padding-left: 32px;
+    }
+
+    &:nth-child(n+2) .reasons__item-note {
+      padding-bottom: 12px;
+    }
+
+    &:nth-child(3) .reasons__item-note {
+      padding-left: 37px;
+    }
+
+    &:nth-child(3) .reasons__item-number {
+      padding-left: 17px;
+    }
+
+    &:first-child .reasons__item-note {
+      padding-bottom: 24px;
+      padding-right: 0;
+      padding-left: 0;
+    }
   }
 
   .reasons__item-title {
@@ -224,7 +282,6 @@ $reason-background-color: #eeeeee;
     font-weight: 700;
     font-size: 21px;
     line-height: 26px;
-    padding: 40px 32px 11px;
   }
 
   .reasons__item-number {
@@ -258,17 +315,28 @@ $reason-background-color: #eeeeee;
     grid-area: c;
     display: flex;
     flex-flow: row;
-    padding: 57px 31px 59px 36px;
+    padding: 57px 0 29px 0;
   }
 
   .reasons__item-feature {
     display: flex;
     flex-direction: column;
     padding-bottom: 0;
-    padding-right: 10px;
 
     &:last-of-type {
       padding-right: 0;
+    }
+
+    &:nth-child(1) .reasons__item-feature-title-text {
+      padding-left: 5px;
+    }
+
+    &:nth-child(2) .reasons__item-feature-title-text {
+      padding-left: 40px;
+    }
+
+    &:nth-child(3) .reasons__item-feature-title-text {
+      padding-left: 40px;
     }
   }
 
@@ -290,16 +358,57 @@ $reason-background-color: #eeeeee;
     width: auto;
   }
 
+  .reasons__item-feature-title-icon--house {
+    width: 75px;
+    height: 72px;
+    padding-top: 2px;
+    padding-left: 1px;
+  }
+
+  .reasons__item-feature-title-icon--burger {
+    width: 76px;
+    height: 68px;
+    padding-top: 5px;
+    padding-left: 40px;
+  }
+
+  .reasons__item-feature-title-icon--gift {
+    width: 64px;
+    height: 75px;
+    padding-left: 35px;
+  }
+
   .reasons__item-feature-description {
     text-align: center;
     padding-left: 0;
-    margin: 0;
+    margin: -13px 0 0;
+
+    br {
+      display: inline;
+    }
+  }
+
+  .reasons__item-feature:nth-child(1) .reasons__item-feature-description {
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-right: 18px;
+  }
+
+  .reasons__item-feature:nth-child(2) .reasons__item-feature-description {
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-right: 0;
+  }
+
+  .reasons__item-feature:nth-child(3) .reasons__item-feature-description {
+    padding-top: 10px;
+    padding-left: 53px;
   }
 
   .reasons__list--simple {
     display: grid;
     grid-auto-flow: column;
-    padding-left: 33px;
+    padding-left: 23px;
     padding-right: 33px;
     padding-bottom: 0;
   }
@@ -319,7 +428,10 @@ $reason-background-color: #eeeeee;
 
   .reasons__list--simple .reasons__item {
     border-bottom: none;
+    padding-right: 62px;
   }
+
+
 }
 
 @media (min-width: $desktop-width) {

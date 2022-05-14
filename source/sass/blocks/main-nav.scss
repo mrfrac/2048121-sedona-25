@@ -51,7 +51,7 @@
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 17px 0 11px;
+  padding: 18px 0 11px 1px;
 }
 
 @media (max-width: $mobile-only-width) {
@@ -174,7 +174,7 @@
     line-height: 21px;
     background-color: #ffffff;
     box-shadow: none;
-    padding-top: 18px;
+    // padding-top: 18px;
     border: none;
 
     &:nth-child(2) {

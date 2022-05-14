@@ -32,11 +32,17 @@
     font-weight: 700;
     font-size: 30px;
     line-height: 26px;
-    padding: 48px 124px 0;
+    padding: 49px 124px 0;
+  }
+
+  .page-header__title--minor {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
   }
 
   .page-header__description {
-    padding: 38px 124px 57px;
+    padding: 29px 124px 60px;
   }
 }
 
