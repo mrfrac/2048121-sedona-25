@@ -2,6 +2,7 @@ $reason-background-color: #eeeeee;
 
 .reasons {
   text-transform: uppercase;
+  margin-top: -5px;
 }
 
 .reasons__list {
@@ -12,6 +13,45 @@ $reason-background-color: #eeeeee;
 
 .reasons__item {
   color: #ffffff;
+
+  &:first-child .reasons__item-title {
+    padding: 54px 22px 11px 16px;
+  }
+
+  &:first-child .reasons__item-number {
+    padding: 54px 22px 11px 16px;
+  }
+
+  &:first-child .reasons__item-note {
+    padding: 16px 22px 39px 16px;
+  }
+
+  &:nth-child(2) .reasons__item-title {
+    padding-top: 39px;
+  }
+
+  &:nth-child(2) .reasons__item-note {
+    padding-bottom: 34px;
+  }
+}
+
+.reasons__item--simple {
+  &:first-child .reasons__item-title {
+    padding-top: 26px;
+  }
+
+  &:nth-child(n+2) .reasons__item-title {
+    padding-top: 24px;
+    // padding-left: 9px;
+  }
+
+  &:nth-child(n+2) .reasons__item-note {
+    padding-bottom: 26px;
+  }
+
+  &:first-child .reasons__item-note {
+    padding-bottom: 24px;
+  }
 }
 
 .reasons__item-description {
@@ -20,7 +60,7 @@ $reason-background-color: #eeeeee;
 }
 
 .reasons__item-title {
-  padding: 54px 22px 11px 16px;
+  padding: 54px 15px 11px 16px;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -36,7 +76,7 @@ $reason-background-color: #eeeeee;
 }
 
 .reasons__item-note {
-  padding: 16px 22px 39px 16px;
+  padding: 17px 16px 37px 15px;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -45,6 +85,7 @@ $reason-background-color: #eeeeee;
 }
 
 .reasons__item-photo {
+  display: block;
   width: 100%;
   height: auto;
   object-fit: contain;
@@ -60,7 +101,29 @@ $reason-background-color: #eeeeee;
 }
 
 .reasons__item-feature {
-  padding-bottom: 22px;
+  padding-bottom: 24px;
+
+  &:nth-child(2) .reasons__item-feature-title-text {
+    padding-left: 12px;
+  }
+
+  &:nth-child(2) .reasons__item-feature-description {
+    padding-left: 52px;
+    padding-top: 12px;
+  }
+
+  &:nth-child(3) .reasons__item-feature-title-text {
+    padding-left: 4px;
+  }
+
+  &:nth-child(3) .reasons__item-feature-description {
+    padding-left: 44px;
+    padding-top: 13px;
+  }
+
+  &:last-child {
+    padding-bottom: 51px;
+  }
 }
 
 .reasons__item-feature-title {
@@ -87,11 +150,13 @@ $reason-background-color: #eeeeee;
   font-size: 14px;
   line-height: 21px;
   color: $description-font-color;
+  margin: 0;
+  padding-top: 10px;
 }
 
 .reasons__list--simple {
   background-color: $reason-background-color;
-  padding: 0 18px 26px;
+  padding: 0 18px 0 24px;
 }
 
 .reasons__list--simple .reasons__item {
