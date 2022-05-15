@@ -1,6 +1,7 @@
 .form-control {
   display: flex;
   flex-direction: column;
+  padding-bottom: 16px;
 }
 
 .form-control__label {
@@ -19,6 +20,11 @@
   display: flex;
   padding-right: 16px;
   align-items: center;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: initial;
+  margin-bottom: -2px;
 }
 
 .form-control__input {
@@ -28,9 +34,9 @@
   border: none;
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 26px;
-  padding: 0 0 0 16px;
+  padding: 1px 0 0 16px;
 
   &::placeholder {
     color: rgba(0, 0, 0, 0.3);
@@ -104,7 +110,7 @@
     background-image: url("../img/tick.svg");
     position: relative;
     top: -15px;
-    left: -33px;
+    left: -30px;
   }
 
   &:not(:checked)::after {
@@ -119,7 +125,7 @@
 }
 
 .form-control__textarea {
-  height: 150px;
+  height: 117px;
   width: auto;
   background-color: $controls-background-color;
   font-style: normal;
@@ -155,4 +161,18 @@
   height: 58px;
   width: 58px;
   background-color: #e6e6e6;
+  padding: 0 9px 0 6px;
+}
+
+@media (min-width: $tablet-width) {
+  .form-control__textarea {
+    height: 125px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-control__textarea {
+    height: 129px;
+    width: 77%;
+  }
 }

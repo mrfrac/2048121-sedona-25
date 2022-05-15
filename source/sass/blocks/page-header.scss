@@ -14,6 +14,11 @@
   padding-right: 9%;
 }
 
+.page-header__title--form {
+  padding-top: 37px;
+  padding-left: 9%;
+}
+
 .page-header__description {
   font-style: normal;
   line-height: 21px;
@@ -24,6 +29,10 @@
   padding-top: 35px;
   padding-left: 6%;
   padding-right: 6%;
+}
+
+.page-header__description--form {
+  padding-top: 23px;
 }
 
 @media (min-width: $tablet-width) {
@@ -44,14 +53,24 @@
   .page-header__description {
     padding: 29px 124px 60px;
   }
+
+  .page-header__title--form {
+    padding-top: 63px;
+    padding-bottom: 0px;
+  }
+
+  .page-header__description--form {
+    padding: 24px 124px 54px;
+  }
 }
 
 @media (min-width: $desktop-width) {
-  .page-header__title {
-    padding: 59px 359px 0 358px;
+  .page-header__title--form {
+    padding-top: 113px;
+    padding-bottom: 8px;
   }
 
-  .page-header__description {
-    padding: 29px 356px 50px 358px;
+  .page-header__description--form {
+    padding: 24px 124px 18px;
   }
 }
