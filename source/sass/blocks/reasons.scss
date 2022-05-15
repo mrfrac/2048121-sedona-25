@@ -333,6 +333,7 @@ $reason-background-color: #eeeeee;
     display: flex;
     flex-direction: column;
     padding-bottom: 0;
+    width: 33%;
 
     &:last-of-type {
       padding-right: 0;
@@ -343,7 +344,7 @@ $reason-background-color: #eeeeee;
     }
 
     &:nth-child(2) .reasons__item-feature-title-text {
-      padding-left: 40px;
+      //padding-left: 40px;
     }
 
     &:nth-child(3) .reasons__item-feature-title-text {
@@ -380,13 +381,13 @@ $reason-background-color: #eeeeee;
     width: 76px;
     height: 68px;
     padding-top: 5px;
-    padding-left: 40px;
+    //padding-left: 40px;
   }
 
   .reasons__item-feature-title-icon--gift {
     width: 64px;
     height: 75px;
-    padding-left: 35px;
+    //padding-left: 35px;
   }
 
   .reasons__item-feature-description {
@@ -402,14 +403,14 @@ $reason-background-color: #eeeeee;
   }
 
   .reasons__item-feature:nth-child(2) .reasons__item-feature-description {
-    padding-left: 40px;
-    padding-top: 10px;
-    padding-right: 0;
+    padding-left: 16px;
+    padding-top: 14px;
+    padding-right: 10px;
   }
 
   .reasons__item-feature:nth-child(3) .reasons__item-feature-description {
     padding-top: 10px;
-    padding-left: 53px;
+    padding-left: 13px;
   }
 
   .reasons__list--simple {
@@ -427,6 +428,34 @@ $reason-background-color: #eeeeee;
 }
 
 @media (min-width: $desktop-width) {
+  .reasons__item {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-areas: "a b" "c c";
+
+    &:nth-child(2n) {
+      grid-template-columns: 1fr 0.5fr;
+      grid-template-areas: "b a" "c c";
+      height: 256px;
+    }
+
+    &:first-child .reasons__item-title {
+      padding: 48px 7px 13px 10px;
+    }
+
+    &:first-child .reasons__item-note {
+      padding: 23px 29px 13px;
+    }
+
+    &:first-child .reasons__item-number {
+      padding-left: 23px;
+    }
+
+    &:nth-child(2) .reasons__item-title {
+      padding: 51px 12px 13px 10px;
+    }
+  }
+
   .reasons__item-title {
     padding: 47px 52px 11px 53px;
   }
@@ -436,23 +465,102 @@ $reason-background-color: #eeeeee;
   }
 
   .reasons__item-features {
-    padding: 57px 0 50px 0;
+    padding: 57px 0 30px 0;
   }
 
   .reasons__item-feature:nth-child(1) .reasons__item-feature-description {
-    padding-left: 20px;
+    //padding-left: 73px;
     padding-top: 10px;
-    padding-right: 18px;
+    //padding-right: 0;
   }
 
   .reasons__item-feature:nth-child(2) .reasons__item-feature-description {
-    padding-left: 40px;
+    //padding-left: 136px;
     padding-top: 10px;
     padding-right: 0;
   }
 
   .reasons__item-feature:nth-child(3) .reasons__item-feature-description {
     padding-top: 10px;
-    padding-left: 53px;
+    // padding-left: 150px;
+  }
+
+  .reasons__item-feature-title-icon--house {
+    width: 75px;
+    height: 72px;
+    padding-top: 3px;
+  }
+
+  .reasons__item-feature-title-icon--burger {
+    width: 76px;
+    height: 68px;
+    padding-top: 6px;
+    //padding-left: 132px;
+  }
+
+  .reasons__item-feature-title-icon--gift {
+    width: 64px;
+    height: 75px;
+    padding-left: 20px;
+  }
+
+  .reasons__item-feature {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0;
+
+    &:last-of-type {
+      padding-right: 0;
+    }
+
+    &:nth-child(1) .reasons__item-feature-title-text {
+      // padding-left: 74px;
+    }
+
+    &:nth-child(2) .reasons__item-feature-title-text {
+      /*padding-left: 162px;
+      padding-right: 26px;*/
+    }
+
+    &:nth-child(3) .reasons__item-feature-title-text {
+      padding-left: 16px;
+      //padding-right: 26px;
+    }
+  }
+
+  .reasons__list--simple {
+    padding-left: 18px;
+    padding-right: 0;
+  }
+
+  .reasons__item--simple {
+    &:nth-child(1) .reasons__item-title {
+      padding: 43px 7px 13px 10px;
+    }
+
+    &:nth-child(2) .reasons__item-title {
+      padding: 42px 14px 13px 10px;
+    }
+
+    &:nth-child(3) .reasons__item-title {
+      padding-top: 43px;
+      padding-left: 15px;
+      padding-right: 0;
+    }
+
+    &:nth-child(3) .reasons__item-number {
+      padding-left: 20px;
+    }
+
+    &:nth-child(n+2) .reasons__item-note {
+      padding-bottom: 12px;
+      padding-left: 38px;
+      padding-right: 45px;
+    }
+
+    &:nth-child(3) .reasons__item-note {
+      padding-left: 19px;
+      padding-right: 0;
+    }
   }
 }
