@@ -187,6 +187,14 @@
       padding-bottom: 25px;
     }
 
+    &:nth-child(2) {
+      padding-bottom: 10px;
+    }
+
+    &:nth-child(3) {
+      padding-bottom: 34px;
+    }
+
     &:nth-child(1) .feedback-form__block-controls {
       padding-right: 50px;
     }
@@ -206,6 +214,10 @@
     &:nth-child(4) .feedback-form__block-controls {
       padding-bottom: 50px;
       padding-top: 29px;
+      display: flex;
+      flex-flow: row;
+      justify-content: center;
+      flex-wrap: wrap;
     }
 
     &:nth-child(5) .form-control {
@@ -220,23 +232,6 @@
       justify-content: center;
       padding-top: 17px;
       margin-left: -113px;
-    }
-
-    &:nth-child(4) .feedback-form__block-controls {
-      display: flex;
-      flex-flow: row;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-  }
-
-  .feedback-form__block {
-    &:nth-child(2) {
-      padding-bottom: 10px;
-    }
-
-    &:nth-child(3) {
-      padding-bottom: 34px;
     }
   }
 
