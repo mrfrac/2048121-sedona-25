@@ -437,11 +437,11 @@ $reason-background-color: #eeeeee;
     }
 
     &:first-child .reasons__item-note {
-      padding: 23px 29px 13px;
+      padding: 23px 8px 13px;
     }
 
     &:first-child .reasons__item-number {
-      padding-left: 23px;
+      padding-left: 12px;
     }
 
     &:nth-child(2) .reasons__item-title {
@@ -517,16 +517,16 @@ $reason-background-color: #eeeeee;
 
   .reasons__item--simple {
     &:nth-child(1) .reasons__item-title {
-      padding: 43px 7px 13px 10px;
+      padding: 43px 18px 13px 10px;
     }
 
     &:nth-child(2) .reasons__item-title {
-      padding: 42px 14px 13px 10px;
+      padding: 42px 11px 13px 10px;
     }
 
     &:nth-child(3) .reasons__item-title {
-      padding-top: 43px;
-      padding-left: 15px;
+      padding-top: 44px;
+      padding-left: 35px;
       padding-right: 0;
     }
 
@@ -536,8 +536,8 @@ $reason-background-color: #eeeeee;
 
     &:nth-child(n+2) .reasons__item-note {
       padding-bottom: 12px;
-      padding-left: 38px;
-      padding-right: 45px;
+      padding-left: 0px;
+      padding-right: 1px;
     }
 
     &:nth-child(3) .reasons__item-note {

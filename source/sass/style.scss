@@ -35,6 +35,18 @@
   display: none;
 }
 
+.visible-on-mobile {
+  display: inline;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
 .visible-on-tablet {
   display: none;
 
