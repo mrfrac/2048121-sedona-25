@@ -42,7 +42,6 @@ $reason-background-color: #eeeeee;
 
   &:nth-child(n+2) .reasons__item-title {
     padding-top: 24px;
-    // padding-left: 9px;
   }
 
   &:nth-child(n+2) .reasons__item-note {
@@ -343,10 +342,6 @@ $reason-background-color: #eeeeee;
       padding-left: 5px;
     }
 
-    &:nth-child(2) .reasons__item-feature-title-text {
-      //padding-left: 40px;
-    }
-
     &:nth-child(3) .reasons__item-feature-title-text {
       padding-left: 40px;
     }
@@ -381,13 +376,11 @@ $reason-background-color: #eeeeee;
     width: 76px;
     height: 68px;
     padding-top: 5px;
-    //padding-left: 40px;
   }
 
   .reasons__item-feature-title-icon--gift {
     width: 64px;
     height: 75px;
-    //padding-left: 35px;
   }
 
   .reasons__item-feature-description {
@@ -469,20 +462,16 @@ $reason-background-color: #eeeeee;
   }
 
   .reasons__item-feature:nth-child(1) .reasons__item-feature-description {
-    //padding-left: 73px;
     padding-top: 10px;
-    //padding-right: 0;
   }
 
   .reasons__item-feature:nth-child(2) .reasons__item-feature-description {
-    //padding-left: 136px;
     padding-top: 10px;
     padding-right: 0;
   }
 
   .reasons__item-feature:nth-child(3) .reasons__item-feature-description {
     padding-top: 10px;
-    // padding-left: 150px;
   }
 
   .reasons__item-feature-title-icon--house {
@@ -495,7 +484,6 @@ $reason-background-color: #eeeeee;
     width: 76px;
     height: 68px;
     padding-top: 6px;
-    //padding-left: 132px;
   }
 
   .reasons__item-feature-title-icon--gift {
@@ -513,23 +501,17 @@ $reason-background-color: #eeeeee;
       padding-right: 0;
     }
 
-    &:nth-child(1) .reasons__item-feature-title-text {
-      // padding-left: 74px;
-    }
-
-    &:nth-child(2) .reasons__item-feature-title-text {
-      /*padding-left: 162px;
-      padding-right: 26px;*/
-    }
-
     &:nth-child(3) .reasons__item-feature-title-text {
-      padding-left: 16px;
-      //padding-right: 26px;
+      padding-left: 11px;
     }
   }
 
   .reasons__list--simple {
     padding-left: 18px;
+    padding-right: 0;
+  }
+
+  .reasons__list--simple .reasons__item {
     padding-right: 0;
   }
 
