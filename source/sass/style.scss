@@ -62,6 +62,10 @@
 .visible-on-desktop {
   display: none;
 
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
   @media (min-width: $desktop-width) {
     display: inline;
   }
@@ -71,6 +75,14 @@
   display: inline;
 
   @media (min-width: $mobile-width) and (max-width: $mobile-only-width) {
+    display: none;
+  }
+}
+
+.hidden-on-tablet {
+  display: inline;
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-only-width) {
     display: none;
   }
 }

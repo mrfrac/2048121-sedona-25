@@ -27,3 +27,18 @@
     background-color: #e5e5e5;
   }
 }
+
+@media (min-width: $mobile-width) {
+  .button--find-hotel {
+    display: block;
+    width: 216px;
+    margin: -17px 10px -15px -10px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button--find-hotel {
+    width: 395px;
+    margin: -17px auto -15px auto;
+  }
+}
