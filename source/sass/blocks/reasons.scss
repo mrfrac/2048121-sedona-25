@@ -42,6 +42,7 @@ $reason-background-color: #eeeeee;
 
   &:nth-child(n+2) .reasons__item-title {
     padding-top: 24px;
+    padding-left: 8px;
   }
 
   &:nth-child(n+2) .reasons__item-note {
@@ -240,7 +241,7 @@ $reason-background-color: #eeeeee;
 
     &:first-child .reasons__item-title {
       padding-top: 42px;
-      padding-left: 27px;
+      padding-left: 24px;
     }
 
     &:first-child .reasons__item-number {
@@ -343,7 +344,7 @@ $reason-background-color: #eeeeee;
     }
 
     &:nth-child(3) .reasons__item-feature-title-text {
-      padding-left: 40px;
+      padding-left: 17px;
     }
   }
 
