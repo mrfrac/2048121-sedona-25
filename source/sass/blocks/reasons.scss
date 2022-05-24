@@ -312,7 +312,7 @@ $reason-background-color: #eeeeee;
 
   .reasons__item-description {
     grid-area: a;
-    height: 256px;
+    min-height: 256px;
     border-bottom: none;
   }
 
