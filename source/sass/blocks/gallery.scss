@@ -1,5 +1,5 @@
 .gallery__wrapper {
-  padding-top: 25px;
+  padding-top: 41px;
 }
 
 .gallery__list {
@@ -64,6 +64,8 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
+  padding-top: 4px;
+  padding-left: 5px;
 }
 
 @media (min-width: $tablet-width) {
@@ -85,6 +87,14 @@
     &:first-child {
       grid-area: first;
     }
+  }
+
+  .gallery__list-item-likes {
+    padding-top: 7px;
+  }
+
+  .gallery__list-item-likes-icon {
+    padding-right: 4px;
   }
 
   .gallery__list-item:first-child .gallery__list-item-figure-image {
@@ -129,6 +139,10 @@
     padding-right: 0;
   }
 
+  .gallery__list {
+    grid-template-areas: "first first first";
+  }
+
   .gallery__list-item-caption {
     background: rgb(#000000, 0.3);
     color: #ffffff;
@@ -140,7 +154,7 @@
   }
 
   .gallery__list-item-likes {
-    padding: 22px 20px 15px 0;
+    padding: 29px 20px 15px 0;
   }
 
   .gallery__list-item-figure {

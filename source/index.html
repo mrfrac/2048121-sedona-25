@@ -9,6 +9,10 @@
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="css/style.min.css" type="text/css" as="style">
+  <link rel="preload" href="js/menu.min.js" type="text/js" as="script">
+  <link rel="preload" href="fonts/ptsans.woff2" type="font/woff2" as="font">
+  <link rel="preload" href="fonts/ptsansbold.woff2" type="font/woff2" as="font">
 </head>
 <body class="page-body">
 
@@ -50,95 +54,95 @@
 
   <section class="page-header">
     <div class="page-header__wrapper">
-      <h2 class="page-header__title">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</h2>
-      <p class="page-header__description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      <h2 class="page-header__title page-header__title--minor">СЕДОНА — небольшой <br class="visible-on-mobile">городок в АРИЗОНЕ, <br class="visible-on-mobile visible-on-desktop">&nbsp; заслуживающий большего!</h2>
+      <p class="page-header__description page-header__description--minor">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       <div class="reasons">
         <ol class="reasons__list">
           <li class="reasons__item">
             <div class="reasons__item-description">
-              <h3 class="reasons__item-title">Настоящий городок</h3>
+              <h3 class="reasons__item-title">Настоящий <br class="hidden-on-mobile">городок</h3>
               <span class="reasons__item-number">— №1 —</span>
-              <p class="reasons__item-note">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+              <p class="reasons__item-note">СЕДОНА НЕ АТтРАКЦИОН ДЛЯ ТУРИСТОВ, <br class="hidden-on-tablet">&nbsp; ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
             </div>
             <picture>
               <source media="(min-width: 1200px)" srcset="img/photo-city-desktop.webp 1x, img/photo-city-desktop@2x.webp 2x" type="image/webp">
               <source media="(min-width: 768px)" srcset="img/photo-city-tablet.webp 1x, img/photo-city-tablet@2x.webp 2x" type="image/webp">
               <source srcset="img/photo-city.webp 1x, img/photo-city@2x.webp 2x" type="image/webp">
-              <source media="(min-width: 1200px)" srcset="img/photo-city-desktop.png 1x, img/photo-city-desktop@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/photo-city-tablet.png 1x, img/photo-city-tablet@2x.png 2x">
-              <img class="reasons__item-photo" src="img/photo-city.png" width="320" height="260" alt="Город Седона" srcset="img/photo-city@2x.png 2x">
+              <source media="(min-width: 1200px)" srcset="img/photo-city-desktop.jpg 1x, img/photo-city-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-city-tablet.jpg 1x, img/photo-city-tablet@2x.jpg 2x">
+              <img class="reasons__item-photo" src="img/photo-city.jpg" width="320" height="260" alt="Город Седона" srcset="img/photo-city@2x.jpg 2x">
             </picture>
             <ul class="reasons__item-features">
               <li class="reasons__item-feature">
                 <div class="reasons__item-feature-title">
-                  <svg class="reasons__item-feature-title-icon" width="40" height="35" viewBox="0 0 39 37">
+                  <svg class="reasons__item-feature-title-icon reasons__item-feature-title-icon--house" width="40" height="40" viewBox="0 0 39 37">
                     <use xlink:href="img/sprite.svg#icon-house"></use>
                   </svg>
                   <h4 class="reasons__item-feature-title-text">Жильё</h4>
                 </div>
-                <p class="reasons__item-feature-description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                <p class="reasons__item-feature-description">Рекомендуем пожить в настоящем <br class="visible-on-desktop">мотеле, все <br class="visible-on-tablet"> как в кино!</p>
               </li>
 
               <li class="reasons__item-feature">
                 <div class="reasons__item-feature-title">
-                  <svg class="reasons__item-feature-title-icon" width="40" height="35" viewBox="0 0 40 35">
+                  <svg class="reasons__item-feature-title-icon reasons__item-feature-title-icon--burger" width="40" height="35" viewBox="0 0 40 35">
                     <use xlink:href="img/sprite.svg#icon-burger"></use>
                   </svg>
                   <h4 class="reasons__item-feature-title-text">Еда</h4>
                 </div>
-                <p class="reasons__item-feature-description">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+                <p class="reasons__item-feature-description">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, <br class="hidden-on-mobile">Вы НЕ разочаруетесь!</p>
               </li>
 
               <li class="reasons__item-feature">
                 <div class="reasons__item-feature-title">
-                  <svg class="reasons__item-feature-title-icon" width="40" height="35" viewBox="0 0 32 38">
+                  <svg class="reasons__item-feature-title-icon reasons__item-feature-title-icon--gift" width="40" height="35" viewBox="0 0 32 38">
                     <use xlink:href="img/sprite.svg#icon-gift"></use>
                   </svg>
                   <h4 class="reasons__item-feature-title-text">Сувениры</h4>
                 </div>
-                <p class="reasons__item-feature-description">Не только китайского, но и местного производства!</p>
+                <p class="reasons__item-feature-description">Не только китайского, <br class="visible-on-desktop"> но <br class="visible-on-tablet"> и местного производства!</p>
               </li>
             </ul>
           </li>
 
           <li class="reasons__item">
             <div class="reasons__item-description">
-              <h3 class="reasons__item-title">ТАМ ЕСТЬ Мост дьявола</h3>
+              <h3 class="reasons__item-title">ТАМ ЕСТЬ <br class="hidden-on-mobile">Мост дьявола</h3>
               <span class="reasons__item-number">— №2 —</span>
-              <p class="reasons__item-note">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+              <p class="reasons__item-note">Да, по нему можно пройти! <br class="visible-on-desktop">Если вы осмелитесь, конечно</p>
             </div>
             <picture>
               <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop.webp 1x, img/photo-bridge-desktop@2x.webp 2x" type="image/webp">
               <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet.webp 1x, img/photo-bridge-tablet@2x.webp 2x" type="image/webp">
               <source srcset="img/photo-bridge.webp 1x, img/photo-bridge@2x.webp 2x" type="image/webp">
-              <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop.png 1x, img/photo-bridge-desktop@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet.png 1x, img/photo-bridge-tablet@2x.png 2x">
-              <img class="reasons__item-photo" src="img/photo-bridge.png" width="320" height="260" alt="Мост дьявола" srcset="img/photo-bridge@2x.png 2x">
+              <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+              <img class="reasons__item-photo" src="img/photo-bridge.jpg" width="320" height="260" alt="Мост дьявола" srcset="img/photo-bridge@2x.jpg 2x">
             </picture>
           </li>
         </ol>
         <ol class="reasons__list reasons__list--simple">
           <li class="reasons__item reasons__item--simple">
             <div class="reasons__item-description">
-              <h3 class="reasons__item-title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
+              <h3 class="reasons__item-title">НЕБОЛЬШАЯ <br class="hidden-on-mobile">ПЛОЩАДЬ</h3>
               <span class="reasons__item-number">— №3 —</span>
-              <p class="reasons__item-note">ВСЕ интересные места находятся очень близко</p>
+              <p class="reasons__item-note">ВСЕ интересные места находятся очень <br class="visible-on-desktop">близко</p>
             </div>
           </li>
 
           <li class="reasons__item reasons__item--simple">
             <div class="reasons__item-description">
-              <h3 class="reasons__item-title">КРАСИВАЯ ДОРОГА</h3>
+              <h3 class="reasons__item-title">КРАСИВАЯ <br class="hidden-on-mobile">ДОРОГА</h3>
               <span class="reasons__item-number">— №4 —</span>
-              <p class="reasons__item-note">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
+              <p class="reasons__item-note">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем <br class="hidden-on-mobile"> НЕ СКУЧНО!</p>
             </div>
           </li>
 
           <li class="reasons__item reasons__item--simple">
             <div class="reasons__item-description">
-              <h3 class="reasons__item-title">МАЛО ТУРИСТОВ</h3>
+              <h3 class="reasons__item-title">МАЛО <br class="hidden-on-mobile">ТУРИСТОВ</h3>
               <span class="reasons__item-number">— №5 —</span>
-              <p class="reasons__item-note">Большинство едет в гранд-каньон и толпится там</p>
+              <p class="reasons__item-note">Большинство едет в гранд-каньон и <br class="visible-on-desktop">толпится там</p>
             </div>
           </li>
 
@@ -151,9 +155,9 @@
     <div class="interest__wrapper">
       <h2 class="interest__title">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
       <p class="interest__text">
-        Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
+        Укажите предполагаемые даты поездки, <br class="hidden-on-mobile">и мы покажем вам лучшие предложения гостиниц в седоне
       </p>
-      <a class="button" href="catalog.html">Найти Гостиницу</a>
+      <a class="button button--find-hotel" href="form.html">Найти Гостиницу</a>
     </div>
   </section>
 
@@ -171,7 +175,7 @@
       <a class="main-footer__social-tag" href="#">#VISITSEDONA</a>
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__item-link" href="#">
+          <a class="social__item-link" href="#" aria-label="VK">
             <svg width="48" height="48">
               <use xlink:href="img/sprite.svg#logo-vk"></use>
             </svg>
@@ -179,7 +183,7 @@
         </li>
 
         <li class="social__item">
-          <a class="social__item-link" href="#">
+          <a class="social__item-link" href="#" aria-label="Telegram">
             <svg width="48" height="48">
               <use xlink:href="img/sprite.svg#logo-telegram"></use>
             </svg>
@@ -187,7 +191,7 @@
         </li>
 
         <li class="social__item">
-          <a class="social__item-link" href="#">
+          <a class="social__item-link" href="#" aria-label="YouTube">
             <svg width="48" height="48">
               <use xlink:href="img/sprite.svg#logo-youtube"></use>
             </svg>

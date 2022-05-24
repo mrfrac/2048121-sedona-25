@@ -1,9 +1,15 @@
 .map__wrapper {
-  padding-top: 49px;
+  padding-top: 64px;
 }
 
 .map__embed {
   width: 100%;
   height: 350px;
   object-fit: cover;
+}
+
+@media (min-width: $desktop-width) {
+  .map__wrapper {
+    padding-top: 70px;
+  }
 }

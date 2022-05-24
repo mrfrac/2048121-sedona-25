@@ -1,6 +1,7 @@
 .form-control {
   display: flex;
   flex-direction: column;
+  padding-bottom: 16px;
 }
 
 .form-control__label {
@@ -19,6 +20,11 @@
   display: flex;
   padding-right: 16px;
   align-items: center;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: initial;
+  margin-bottom: -2px;
 }
 
 .form-control__input {
@@ -28,12 +34,25 @@
   border: none;
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 26px;
   padding: 0 0 0 16px;
 
   &::placeholder {
     color: rgba(0, 0, 0, 0.3);
+  }
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:focus {
+    background-color: #ffffff;
+    box-sizing: border-box;
+    border: 4px solid #e5e5e5;
+    outline: none;
+    padding-left: 12px;
+    padding-top: 0;
   }
 }
 
@@ -54,6 +73,16 @@
     height: 46px;
   }
 
+  &:checked:hover::before,
+  &:not(:checked):hover::before {
+    background-color: #e5e5e5;
+  }
+
+  &:checked:active::before,
+  &:not(:checked):active::before {
+    background-color: #d5d5d5;
+  }
+
   &:checked::after,
   &:not(:checked)::after {
     content: "";
@@ -65,6 +94,11 @@
     position: relative;
     top: -15px;
     left: -31px;
+  }
+
+  &:checked:active::after,
+  &:not(:checked):active::after {
+    background-color: rgba(#333333, 0.3);
   }
 
   &:not(:checked)::after {
@@ -95,16 +129,32 @@
     height: 46px;
   }
 
+  &:checked:hover::before,
+  &:not(:checked):hover::before {
+    background-color: #e5e5e5;
+  }
+
+  &:checked:active::before,
+  &:not(:checked):active::before {
+    background-color: #d5d5d5;
+  }
+
   &:checked::after,
   &:not(:checked)::after {
     content: "";
     display: inline-block;
     width: 22px;
     height: 16px;
-    background-image: url("../img/tick.svg");
+    background-color: #333333;
+    mask-image: url("../img/tick.svg");
     position: relative;
     top: -15px;
-    left: -33px;
+    left: -32px;
+  }
+
+  &:checked:active::after,
+  &:not(:checked):active::after {
+    background-color: rgba(#333333, 0.3);
   }
 
   &:not(:checked)::after {
@@ -119,7 +169,8 @@
 }
 
 .form-control__textarea {
-  height: 150px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  height: 117px;
   width: auto;
   background-color: $controls-background-color;
   font-style: normal;
@@ -155,4 +206,22 @@
   height: 58px;
   width: 58px;
   background-color: #e6e6e6;
+  padding: 0 9px 0 6px;
+}
+
+@media (min-width: $tablet-width) {
+  .form-control__textarea {
+    height: 128px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-control__textarea {
+    height: 129px;
+    width: 77%;
+  }
+
+  .form-control__label--flat {
+    padding-right: 0;
+  }
 }
