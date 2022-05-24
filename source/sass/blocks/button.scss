@@ -28,6 +28,10 @@
   }
 }
 
+.button--modal-error {
+  font-family: "PT Sans", "Arial", sans-serif;
+}
+
 @media (min-width: $mobile-width) {
   .button--find-hotel {
     display: block;
