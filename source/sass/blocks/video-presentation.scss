@@ -2,6 +2,7 @@
   border-top: 1px solid $hr-color;
   padding-left: 20px;
   padding-right: 20px;
+  margin-bottom: -10px;
 }
 
 .video-presentation__title {
@@ -20,21 +21,19 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
-  padding: 9px 0 28px;
+  padding: 10px 10px 38px;
   margin: 0;
 }
 
 .video-presentation__embed {
   width: 100%;
-  height: 177px;
+  height: 173px;
 }
 
 @media (min-width: $tablet-width) {
   .video-presentation {
-    padding-right: 60px;
-    padding-left: 60px;
     border-top: none;
-    padding-top: 41px;
+    padding: 41px 60px 47px;
   }
 
   .video-presentation__embed {
@@ -48,11 +47,20 @@
     font-size: 30px;
     line-height: 26px;
   }
+
+  .video-presentation__description {
+    padding: 13px 100px 87px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .video-presentation {
-    padding-top: 49px;
+    padding-top: 44px;
+    padding-bottom: 88px;
+  }
+
+  .video-presentation__description {
+    padding: 16px 310px 87px;
   }
 
   .video-presentation__embed {

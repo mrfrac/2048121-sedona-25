@@ -34,3 +34,55 @@
 .hidden {
   display: none;
 }
+
+.visible-on-mobile {
+  display: inline;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.visible-on-tablet {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.visible-on-desktop {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+  }
+}
+
+.hidden-on-mobile {
+  display: inline;
+
+  @media (min-width: $mobile-width) and (max-width: $mobile-only-width) {
+    display: none;
+  }
+}
+
+.hidden-on-tablet {
+  display: inline;
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-only-width) {
+    display: none;
+  }
+}

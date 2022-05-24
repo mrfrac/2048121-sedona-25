@@ -1,5 +1,5 @@
 .copyright {
-  padding-top: 40px;
+  padding-top: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,5 +33,9 @@
   .copyright {
     padding-top: 0;
     justify-content: right;
+  }
+
+  .copyright__text {
+    padding-right: 13px;
   }
 }

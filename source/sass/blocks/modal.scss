@@ -10,11 +10,11 @@
 }
 
 .modal--error .modal__wrapper {
-  padding: 45px 41px 35px;
+  padding: 43px 41px 35px;
 }
 
 .modal__header-title {
-  padding: 0;
+  padding: 0 22px;
   margin: 0;
   font-style: normal;
   font-weight: 700;
@@ -24,7 +24,7 @@
 }
 
 .modal__text {
-  margin: 0;
+  margin: 0 14px;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -35,6 +35,15 @@
 
 .modal--success .modal__wrapper {
   padding-top: 39px;
+}
+
+.modal--success .modal__text {
+  padding-bottom: 50px;
+}
+
+.modal__footer {
+  padding-left: 29px;
+  padding-right: 29px;
 }
 
 .modal--success .modal__footer {
@@ -48,6 +57,15 @@
   padding-right: 39px;
 }
 
+.modal__footer-button {
+  font-family: "PT Sans", "Arial", sans-serif;
+}
+
+.modal__footer-button-success {
+  font-size: 18px;
+  line-height: 26px;
+}
+
 @media (min-width: $tablet-width) {
   .modal__header-title {
     font-style: normal;
@@ -56,8 +74,21 @@
     line-height: 40px;
   }
 
+  .modal--error .modal__header-title {
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 1px;
+  }
+
+  .modal--error .modal__footer {
+    padding-left: 18px;
+    padding-right: 17px;
+    margin-top: -3px;
+  }
+
   .modal--error {
     width: 400px;
+    height: 347px;
   }
 
   .modal--error .modal__text {
@@ -65,7 +96,7 @@
   }
 
   .modal--error .modal__wrapper {
-    padding: 50px 47px 49px 46px;
+    padding: 45px 47px 47px 46px;
   }
 
   .modal--success {
