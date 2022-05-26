@@ -28,15 +28,17 @@
 }
 
 .form-control__input {
+  font-family: "PT Sans", "Arial", sans-serif;
   height: 58px;
   width: auto;
   background-color: $controls-background-color;
   border: none;
   font-style: normal;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 26px;
   padding: 0 0 0 16px;
+  color: #000000;
 
   &::placeholder {
     color: rgba(0, 0, 0, 0.3);
