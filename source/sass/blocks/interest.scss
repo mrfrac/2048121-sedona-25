@@ -1,5 +1,5 @@
 .interest__wrapper {
-  padding: 37px 30px 0;
+  padding: 37px 0 0;
 }
 
 .interest__title {
@@ -7,7 +7,7 @@
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
-  padding: 0;
+  padding: 0 30px;
   margin: 0;
 }
 
@@ -18,7 +18,7 @@
   line-height: 21px;
   color: $description-font-color;
   margin: 0;
-  padding: 20px 0 49px;
+  padding: 20px 30px 33px;
   text-transform: uppercase;
 }
 
@@ -36,12 +36,12 @@
 
   .interest__text {
     padding-top: 32px;
-    padding-bottom: 59px;
+    padding-bottom: 43px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .interest__text {
-    padding-bottom: 64px;
+    padding-bottom: 48px;
   }
 }

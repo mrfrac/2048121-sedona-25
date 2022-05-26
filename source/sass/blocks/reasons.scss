@@ -19,7 +19,8 @@ $reason-background-color: #eeeeee;
   }
 
   &:first-child .reasons__item-number {
-    padding: 54px 22px 11px 16px;
+    padding-top: 1px;
+    padding-bottom: 1px;
   }
 
   &:first-child .reasons__item-note {
@@ -69,6 +70,7 @@ $reason-background-color: #eeeeee;
 }
 
 .reasons__item-number {
+  display: block;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -226,10 +228,6 @@ $reason-background-color: #eeeeee;
       padding: 23px 32px 13px;
     }
 
-    &:first-child .reasons__item-number {
-      padding-left: 23px;
-    }
-
     &:nth-child(2) .reasons__item-title {
       padding: 43px 53px 13px;
     }
@@ -242,10 +240,6 @@ $reason-background-color: #eeeeee;
     &:first-child .reasons__item-title {
       padding-top: 42px;
       padding-left: 24px;
-    }
-
-    &:first-child .reasons__item-number {
-      padding-left: 18px;
     }
 
     &:nth-child(n+2) .reasons__item-title {
@@ -271,6 +265,7 @@ $reason-background-color: #eeeeee;
 
     &:nth-child(3) .reasons__item-number {
       padding-left: 37px;
+      padding-top: 3px;
     }
 
     &:first-child .reasons__item-note {
@@ -410,7 +405,7 @@ $reason-background-color: #eeeeee;
   .reasons__list--simple {
     display: grid;
     grid-auto-flow: column;
-    padding-left: 23px;
+    padding-left: 20px;
     padding-right: 33px;
     padding-bottom: 0;
   }
@@ -439,10 +434,6 @@ $reason-background-color: #eeeeee;
 
     &:first-child .reasons__item-note {
       padding: 23px 8px 13px;
-    }
-
-    &:first-child .reasons__item-number {
-      padding-left: 12px;
     }
 
     &:nth-child(2) .reasons__item-title {
@@ -508,7 +499,7 @@ $reason-background-color: #eeeeee;
   }
 
   .reasons__list--simple {
-    padding-left: 18px;
+    padding-left: 13px;
     padding-right: 0;
   }
 
@@ -529,10 +520,6 @@ $reason-background-color: #eeeeee;
       padding-top: 44px;
       padding-left: 35px;
       padding-right: 0;
-    }
-
-    &:nth-child(3) .reasons__item-number {
-      padding-left: 20px;
     }
 
     &:nth-child(n+2) .reasons__item-note {

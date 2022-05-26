@@ -1,5 +1,5 @@
 .button {
-  height: fit-content;
+  display: block;
   background-color: $primary-color;
   color: #ffffff;
   padding: 16px 32px;
@@ -34,16 +34,16 @@
 
 @media (min-width: $mobile-width) {
   .button--find-hotel {
-    display: block;
     width: 216px;
-    margin: -17px 10px -15px -10px;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: $tablet-width) {
   .button--find-hotel {
     width: 395px;
-    margin: -17px auto -15px auto;
+    margin: 0 auto;
+    // margin: -17px auto -15px auto;
   }
 
   .button--send-review {
